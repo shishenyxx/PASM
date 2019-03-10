@@ -14,4 +14,4 @@ If you also want to calculate the CIs with PASM Bayesian model, you can use [thi
 
 --------------
 
-Xianing Zheng also developed a [python version](https://github.com/shishenyxx/PASM/blob/master/CI_calculator.py).
+A [python version](https://github.com/shishenyxx/PASM/blob/master/CI_calculator.py) was implemented by Xianing Zheng.
