@@ -11,6 +11,9 @@ You can also only [output the base qualtiy](https://github.com/shishenyxx/PASM/b
 --------------
 
 If you also want to calculate the CIs with PASM Bayesian model, you can use [this script](https://github.com/shishenyxx/PASM/blob/master/get_ref_alt_baseQ_corrected_2016_12_03.pl), or a [older version](https://github.com/shishenyxx/PASM/blob/master/old_get_ref_alt_baseQ_corrected_2016_07_14.pl). Note that the perl package Statistics::R is used to call the [yyxMosaicHunter](https://github.com/Yyx2626/yyxMosaicHunter) package in R.
+Dependencis:
+Rcpp
+pryr
 
 --------------
 
