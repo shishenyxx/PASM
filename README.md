@@ -17,3 +17,11 @@ pryr
 --------------
 
 A [python version](https://github.com/shishenyxx/PASM/blob/master/CI_calculator.py) was implemented by Xianing Zheng.
+
+--------------
+
+A [new python version](https://github.com/shishenyxx/PASM/blob/master/2019-09-25-new-python-MAF-binom-calculator/compute_maf_binom.py) with binomial CIs was implemented by Xin Xu.
+
+--------------
+
+A [snakemake pipeline](https://github.com/shishenyxx/PASM/tree/master/Snakemake_pipeline) with binomial CIs was implemented by Xin Xu.
