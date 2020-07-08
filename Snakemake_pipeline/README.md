@@ -8,7 +8,8 @@ All rights reserved.
 ## Before start, you have to install:
 #### [ANNOVAR](https://doc-openbio.readthedocs.io/projects/annovar/en/latest/)
 #### [BEDTools](https://bedtools.readthedocs.io/en/latest/index.html)
-
+#### [NumPy](https://numpy.org/), [pandas](https://pandas.pydata.org/), and [subprocess](https://docs.python.org/3/library/subprocess.html) packages should be available for python
+#### add the [lib](https://github.com/shishenyxx/PASM/tree/master/Snakemake_pipeline/lib) folder to your PYTHONPATH 
 ## Input:
 These are headers of the input file list.
 #### sample
