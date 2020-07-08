@@ -24,7 +24,7 @@ A [python version](https://github.com/shishenyxx/PASM/blob/master/CI_calculator.
 ### Perl and R versions:
  #### Before you start the Perl + R version:
 Note that the Perl package [Statistics::R](https://metacpan.org/pod/Statistics::R) is used to call the [yyxMosaicHunter](https://github.com/Yyx2626/yyxMosaicHunter) package in R written by Adam Yongxin Ye.
-Dependencies of yyxMosaicHunter 0.1.4 are: `Rcpp`
+<br/>Dependencies of yyxMosaicHunter 0.1.4 are: `Rcpp`
 `pryr`. (2014-11-11)
 
  #### Instructions for the Perl + R version:
