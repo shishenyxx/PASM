@@ -7,6 +7,7 @@ All rights reserved.
 
 ## Before start, you have to install:
 #### [Annovar](https://doc-openbio.readthedocs.io/projects/annovar/en/latest/)
+#### [BEDTools](https://bedtools.readthedocs.io/en/latest/index.html)
 
 ## Input:
 These are headers of the input file list.
@@ -60,31 +61,54 @@ Chromosome number of each variant.
 #### POS
 Genomic position of each variant.
 #### REF
-Reference allele from according to the reference genome file given as "ref_fasta".
-  ALT
-  ANNO
-  GENE
-  GNOMAD_FREQ
-  REPEAT_MASKER
-  SEGDUP
-  HOMOPOLYMER
-  REF_SEQ
-  DINUCLEOTIDE
-  NEAR_INDEL
-  UCSC_RPMSK
-  REF_COUNT
-  ALT_COUNT
-  MAF
-  LOWER_CI
-  UPPER_CI
-  CI_IS_GREATER
-  NORMAL_REF_COUNT
-  NORMAL_ALT_COUNT
-  NORMAL_MAF
-  NORMAL_LOWER_CI
-  NORMAL_UPPER_CI
-  NORMAL_CI_IS_GREATER
-  TUMOR_IS_BLOOD
-  TUMOR_IS_SPERM
-  
-  
+Reference allele according to the reference genome file given as "ref_fasta".
+#### ALT
+Alternative allele according to the input variant list.
+####  ANNO
+Type of variants by annovar.
+#### GENE
+Name of gene if the variant is located on/close to the coding region of a gene.
+#### GNOMAD_FREQ
+Population allele frequency provided in gnomad_af. "0" if not present in the table.
+#### REPEAT_MASKER
+Repeat region defined in "repeat_masker". "0" if not present in the table.
+#### SEGDUP
+Segmental duplication defined in "segdup". "0" if not present in the table.
+#### HOMOPOLYMER
+Homopolymer within ±8 bp sequence. "0" if not present.
+####  REF_SEQ
+Genomic sequence for variant position ±8 bp sequence (17 bp in total).
+#### DINUCLEOTIDE
+Dinucleotide repeat within ±8 bp sequence. "0" if not present.
+#### NEAR_INDEL
+Whether the candidate variant is close to a known germline indel variant by haplotypecaller. "0" if not present.
+#### UCSC_RPMSK
+Annotations in the UCSC repeat masker defined by "ucsc_rpmsk". "pass" if not present.
+#### REF_COUNT
+Number of reads supporting the reference allele calculated in the "tumor" bam.
+#### ALT_COUNT
+Number of reads supporting the alternative allele provided in the input vcf calculated in the "tumor" bam.
+#### MAF
+Mutant allelic fraction calculation from an exact binomial estimation from the "tumor" bam, assuming "REF_COUNT" success form "REF_COUNT"+"ALT_COUNT" trials.
+#### LOWER_CI
+Lower bound of 95% confidence interval of the exact binomial estimation (Clopper–Pearson interval), assuming "REF_COUNT" success form "REF_COUNT"+"ALT_COUNT" trials.
+#### UPPER_CI
+Upper bound of 95% confidence interval of the exact binomial estimation (Clopper–Pearson interval), assuming "REF_COUNT" success form "REF_COUNT"+"ALT_COUNT" trials.
+#### CI_IS_GREATER
+Single char tags for comparison of the variant's "LOWER_CI" with each of the "UPPER_CI" ±5bp of the candidate. "F" if the variant's "LOWER_CI" <= the neighbor's "UPPER_CI" in the "tumor" bam. "P" if the variant's "LOWER_CI" > the neighbor's "UPPER_CI" in the "tumor" bam.
+#### NORMAL_REF_COUNT
+Number of reads supporting the reference allele calculated in the "normal" bam.
+#### NORMAL_ALT_COUNT
+Number of reads supporting the alternative allele provided in the input vcf calculated in the "normal" bam.
+#### NORMAL_MAF
+Mutant allelic fraction calculation from an exact binomial estimation from the "normal" bam, assuming "NORMAL_REF_COUNT" success form "NORMAL_REF_COUNT"+"NORMAL_ALT_COUNT" trials.
+#### NORMAL_LOWER_CI
+Lower bound of 95% confidence interval of the exact binomial estimation (Clopper–Pearson interval) from the "normal" bam, assuming "NORMAL_REF_COUNT" success form "NORMAL_REF_COUNT"+"NORMAL_ALT_COUNT" trials.
+#### NORMAL_UPPER_CI
+Upper bound of 95% confidence interval of the exact binomial estimation (Clopper–Pearson interval) from the "normal" bam, assuming "NORMAL_REF_COUNT" success form "NORMAL_REF_COUNT"+"NORMAL_ALT_COUNT" trials.
+#### NORMAL_CI_IS_GREATER
+Single char tags for comparison of the variant's "NORMAL_LOWER_CI" with each of the "NORMAL_UPPER_CI" ±5bp of the candidate. "F" if the variant's "NORMAL_LOWER_CI" <= the neighbor's "NORMAL_UPPER_CI" in the "normal" bam. "P" if the variant's "NORMAL_LOWER_CI" > the neighbor's "NORMAL_UPPER_CI" in the "normal" bam.
+#### TUMOR_IS_BLOOD
+Test if the "tumor" sample name given in "tumor" contains the expected key words. Could be edited in the helper script.
+#### TUMOR_IS_SPERM
+Test if the "normal" sample name given in "normal" contains the expected key words. Could be edited in the helper script.  
