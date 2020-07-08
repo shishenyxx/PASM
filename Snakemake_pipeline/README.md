@@ -15,7 +15,7 @@ The annotation pipeline takes a list of candidate variants as input, calculates 
 ----------------------------
 
 ## Input:
-These are headers of the input file list.
+### Below are headers of the input file list
 #### sample
 User defined name for the specific sample.
 #### tumor
@@ -34,7 +34,7 @@ Path to the variant quality score recalibrated gvcfs from haplotype caller. This
 ----------------------------
 
 ## Config files:
-These are files you need to prepare for the annotation scripts, saved in the file snake_conf.yaml
+### Below are files you need to prepare for the annotation scripts, saved in the file snake_conf.yaml
 #### input_files
 Path to the input file list.
 #### out_dir
@@ -63,7 +63,7 @@ Segmental duplications annotated to the output table in bed format (correspondin
 ----------------------------
 
 ## Output:
-These are headers of the output table. The output table has the same number of entries as the sum of each of the files from "vcf_path".
+### Below are headers of the output table. The output table has the same number of entries as the sum of each of the files from "vcf_path"
 #### ID
 The name of the "tumor" bam tag where the information of this line is calculated from.
 #### CHROM
