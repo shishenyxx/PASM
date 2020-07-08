@@ -1,4 +1,5 @@
 # PASM
+--------------
 ## Overview
 Here are scripts initially written for Postzygotic Amplicon Sequencing for Mosaicism (PASM). We provided a perl+R version, two standalone python versions, and a Snakemake pipeline. The scripts and pipelines are useful for the calculation of variant allelic fraction (AF) based on not only amplicon based deep sequencing data, but also the AF estimation as well as annotations for postzygotic mosaic variant studies from all kinds of different NGS data.
 
@@ -33,9 +34,11 @@ A [Snakemake pipeline](https://github.com/shishenyxx/PASM/tree/master/Snakemake_
 --------------
 ## Related publications:
 * [Autism risk in offspring can be assessed through quantification of male sperm mosaicism](https://doi.org/10.1038/s41591-019-0711-0) <i>(Nat. Med. 2020)</i>
-* [Genomic mosaicism in the pathogenesis and inheritance of a Rett syndrome cohort](https://doi.org/10.1038/s41436-018-0348-2) <i>(Genet. Med. 2020)</i>
+* [mTOR pathway somatic variants and the molecular pathogenesis of hemimegalencephaly](https://doi.org/10.1002/epi4.12377) <i>(Epi. Open 2020)</i>
+* [Genomic mosaicism in the pathogenesis and inheritance of a Rett syndrome cohort](https://doi.org/10.1038/s41436-018-0348-2) <i>(Genet. Med. 2019)</i>
 * [Mosaicism and incomplete penetrance of PCDH19 mutations](http://dx.doi.org/10.1136/jmedgenet-2017-105235) <i>(J. Med. Genet. 2019)</i>
-* [ATP1A3 mosaicism in families with alternating hemiplegia of childhood]( https://doi.org/10.1111/cge.13539) <i>(Clin. Genet. 2019)</i>
+* [Somatic double-hit in MTOR and RPS6 in hemimegalencephaly with intractable epilepsy](https://doi.org/10.1093/hmg/ddz194) <i>(Hum. Mol. Genet. 2019)</i>
+* [ATP1A3 mosaicism in families with alternating hemiplegia of childhood](https://doi.org/10.1111/cge.13539) <i>(Clin. Genet. 2019)</i>
 * [Distinctive types of postzygotic single-nucleotide mosaicisms in healthy individuals revealed by genome-wide profiling of multiple organs](https://doi.org/10.1371/journal.pgen.1007395) <i>(PLoS Genet. 2018)</i>
 * [Ultrasensitive and high-efficiency screen of de novo low-frequency mutations by o2n-seq](https://doi.org/10.1038/ncomms15335) <i>(Nat. Comms. 2017)</i>
 * [Postzygotic single‐nucleotide mosaicisms contribute to the etiology of autism spectrum disorder and autistic traits and the origin of mutations.](https://doi.org/10.1002/humu.23255) <i>(Hum. Mutat. 2017)</i>
