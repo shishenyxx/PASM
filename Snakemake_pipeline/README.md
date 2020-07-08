@@ -17,7 +17,7 @@ The pipeline is initially written by Renee D. George, re-implemented and re-wrot
 ## Input:
 These are headers of the input file list.
 #### sample
-User defiend name for the specific sample.
+User defined name for the specific sample.
 #### tumor
 The name of the "tumor" sample from the tags in the bam header.
 #### normal
@@ -40,11 +40,11 @@ Path to the input file list.
 #### out_dir
 Path to the output directory.
 #### scratch_dir
-Path to the scratch files. Note that the number of temporary files will be euqals to two- or three-times the number of total listed vriants.
+Path to the scratch files. Note that the number of temporary files will be euqal to two- or three-times the number of total listed variants.
 #### annovar
-Path to your annovar annotate_variation.pl.
+Path to your ANNOVAR annotate_variation.pl.
 #### annovar_db
-Path to your annovar databases.
+Path to your ANNOVAR databases.
 #### homopolymer_script, ci_script, and summerize_script
 Path to the helper scripts, by default the scripts are provided in the helper_scripts folder.
 #### bed_file
@@ -54,7 +54,7 @@ Your reference genome.
 #### gnomad_af
 vcf.gz file with only AF information from gnomAD (corresponding to your reference genome file).
 #### ucsc_rpmsk
-Repeatmask track from UCSC genome browser (corresponding to your reference genome file). the default format is #bin	swScore	milliDiv	milliDel	milliIns	genoName	genoStart	genoEnd	genoLeft	strand	repName	repClass	repFamily	repStart	repEndrepLeft	id
+RepeatMasker track from UCSC genome browser (corresponding to your reference genome file). The default format is #bin	swScore	milliDiv	milliDel	milliIns	genoName	genoStart	genoEnd	genoLeft	strand	repName	repClass	repFamily	repStart	repEndrepLeft	id
 #### repeat_masker
 Additional genomic repeats annotated to the output table in bed format (corresponding to your reference genome file).
 #### segdup
@@ -75,7 +75,7 @@ Reference allele according to the reference genome file given as "ref_fasta".
 #### ALT
 Alternative allele according to the input variant list.
 ####  ANNO
-Type of variants by annovar.
+Type of variants by ANNOVAR.
 #### GENE
 Name of gene if the variant is located on/close to the coding region of a gene.
 #### GNOMAD_FREQ
@@ -91,7 +91,7 @@ Genomic sequence for variant position ±8 bp sequence (17 bp in total).
 #### DINUCLEOTIDE
 Dinucleotide repeat within ±8 bp sequence. "0" if not present.
 #### NEAR_INDEL
-Whether the candidate variant is close to a known germline indel variant by haplotypecaller. "0" if not present.
+Whether the candidate variant is close to a known germline indel variant by HaplotypeCaller. "0" if not present.
 #### UCSC_RPMSK
 Annotations in the UCSC repeat masker defined by "ucsc_rpmsk". "pass" if not present.
 #### REF_COUNT
@@ -121,4 +121,4 @@ Single char tags for comparison of the variant's "NORMAL_LOWER_CI" with each of 
 #### TUMOR_IS_BLOOD
 Test if the "tumor" sample name given in "tumor" contains the expected key words. Could be edited in the helper script.
 #### TUMOR_IS_SPERM
-Test if the "normal" sample name given in "normal" contains the expected key words. Could be edited in the helper script.  
+Test if the "normal" sample name given in "normal" contains the expected key words. Could be edited in the helper script.
