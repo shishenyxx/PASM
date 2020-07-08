@@ -9,8 +9,8 @@ The pipeline is initially written by Renee D. George, re-implemented and re-wrot
 ## Before start, make sure you have:
 #### [ANNOVAR](https://doc-openbio.readthedocs.io/projects/annovar/en/latest/)
 #### [BEDTools](https://bedtools.readthedocs.io/en/latest/index.html)
-#### [NumPy](https://numpy.org/), [pandas](https://pandas.pydata.org/), and [subprocess](https://docs.python.org/3/library/subprocess.html) packages should be available for python
-#### add the [lib](https://github.com/shishenyxx/PASM/tree/master/Snakemake_pipeline/lib) folder to your PYTHONPATH
+#### [NumPy](https://numpy.org/), [pandas](https://pandas.pydata.org/), and [subprocess](https://docs.python.org/3/library/subprocess.html) packages should be available for your Python
+#### add the [lib](https://github.com/shishenyxx/PASM/tree/master/Snakemake_pipeline/lib) folder to your $PYTHONPATH
 
 ----------------------------
 
