@@ -1,7 +1,7 @@
 # PASM
 
 ## Overview
-Here are scripts initially written for Postzygotic Amplicon Sequencing for Mosaicism (PASM). We provided a perl+R version, two standalone python versions, and a Snakemake pipeline. The scripts and pipelines are useful for the calculation of variant allelic fraction (AF) based on not only amplicon based deep sequencing data, but also the AF estimation as well as annotations for postzygotic mosaic variant studies from all kinds of different NGS data.
+Here are scripts initially written for Postzygotic Amplicon Sequencing for Mosaicism (PASM). We provided a perl+R version, two standalone python versions, and a Snakemake pipeline. The scripts and pipelines are useful for the calculation of variant allelic fraction (AF) based on not only amplicon based deep sequencing data, but also the AF estimation as well as annotations for postzygotic mosaic variant studies from all kinds of Next Generation Sequencing (NGS) data.
 
 --------------
 ## Versions and updates
