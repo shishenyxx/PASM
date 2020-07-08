@@ -30,5 +30,12 @@ A [Snakemake pipeline](https://github.com/shishenyxx/PASM/tree/master/Snakemake_
 
 --------------
 ## Related publications:
-[Amplicon resequencing identified parental mosaicism for approximately 10% of “de novo” SCN1A mutations in children with Dravet syndrome.](https://doi.org/10.1002/humu.22819)(2015)
-[Postzygotic single‐nucleotide mosaicisms contribute to the etiology of autism spectrum disorder and autistic traits and the origin of mutations.](https://doi.org/10.1002/humu.23255)(2017)
+* [Autism risk in offspring can be assessed through quantification of male sperm mosaicism](https://doi.org/10.1038/s41591-019-0711-0) <i>(Nat. Med. 2020)</i>
+* [Genomic mosaicism in the pathogenesis and inheritance of a Rett syndrome cohort](https://doi.org/10.1038/s41436-018-0348-2) <i>(Genet. Med. 2020)</i>
+* [Mosaicism and incomplete penetrance of PCDH19 mutations](http://dx.doi.org/10.1136/jmedgenet-2017-105235) <i>(J. Med. Genet. 2019)</i>
+* [ATP1A3 mosaicism in families with alternating hemiplegia of childhood]( https://doi.org/10.1111/cge.13539) <i>(Clin. Genet. 2019)</i>
+* [Distinctive types of postzygotic single-nucleotide mosaicisms in healthy individuals revealed by genome-wide profiling of multiple organs](https://doi.org/10.1371/journal.pgen.1007395) <i>(PLoS Genet. 2018)</i>
+* [Ultrasensitive and high-efficiency screen of de novo low-frequency mutations by o2n-seq](https://doi.org/10.1038/ncomms15335) <i>(Nat. Comms. 2017)</i>
+* [Postzygotic single‐nucleotide mosaicisms contribute to the etiology of autism spectrum disorder and autistic traits and the origin of mutations.](https://doi.org/10.1002/humu.23255) <i>(Hum. Mutat. 2017)</i>
+* [Genomic mosaicism in paternal sperm and multiple parental tissues in a Dravet syndrome cohort](https://doi.org/10.1038/s41598-017-15814-7) <i>(Sci. Rep. 2017)</i>
+* [Amplicon resequencing identified parental mosaicism for approximately 10% of “de novo” SCN1A mutations in children with Dravet syndrome.](https://doi.org/10.1002/humu.22819) <i>(Hum. Mutat. 2015)</i>
