@@ -1,4 +1,4 @@
-# Snakemake pipeline for annotations and the calculations of exact binomial confidence intervals.
+# Snakemake pipeline for annotations and the calculations of exact binomial confidence intervals
 
 ## The annotation pipeline takes a list of candidate variants as input, calculates and annotates the information needed for downstream analysis and calculate the number of reference counts, alternative counts, mutant allelic fractions (MAFs), and the exact binomial confidence intervals of the MAFs from the "tumor" bam. Details about the input and output are listed below:
 
