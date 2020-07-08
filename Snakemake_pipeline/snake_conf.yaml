@@ -6,7 +6,6 @@ out_dir : "./annotation"
 scratch_dir : "./annotation/scratch"
 
 # SOFTWARE
-gatk4 : "/projects/ps-gleesonlab3/rdg/src/gatk-4.0.4.0/gatk"
 annovar : "/home/xiy010/tools/annovar/annotate_variation.pl"
 annovar_db : "/home/xiy010/tools/annovar/humandb/"
 
