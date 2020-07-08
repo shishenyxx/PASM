@@ -143,7 +143,7 @@ if($depth>10){
 
 
 
-#尝试重新输出积分区域
+#Redefine the estimated region for CI calculation
 	$mle_calculate_only=$all{$alt1}/($all{$ref}+$all{$alt1});
 	$mle_interval=1.5/sqrt($depth);
 	$mle_lw=$mle_calculate_only-$mle_interval;
@@ -165,11 +165,11 @@ if($depth>10){
 		$R->run(q`quality_ref <- as.character(quality_ref_in)`);
 		$R->run(q`quality_alt <- as.character(quality_alt_in)`);
 		
-#尝试把MLE的积分区间传过去		
+#Transfer the MLE interval to R		
 		$R->set('int_region_mle_lw',$mle_lw);
 		$R->set('int_region_mle_up',$mle_up);
 		
-#尝试把ref正、ref负、alt正、alt负传过去
+#Transfer ref+, ref-, alt+, alt- to R
 		$R->set('ref_forward',$count{$ref});
 		$R->set('ref_reverse',$count{lc($ref)});
 		$R->set('alt_forward',$count{$alt1});
