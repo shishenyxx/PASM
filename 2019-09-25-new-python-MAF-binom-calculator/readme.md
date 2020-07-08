@@ -1,4 +1,6 @@
 # Python version of PASM
+## Before starting:
+[NumPy](https://numpy.org/), [pandas](https://pandas.pydata.org/), and [scipy](https://www.scipy.org/) packages should be available for your Python.
 
 ## Usage of the tool:
 python new_compute_binom.py [CHR] [POS] [REF] [ALT] [BAM_PATH]
