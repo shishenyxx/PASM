@@ -6,7 +6,7 @@ The pipeline is initially written by Renee D. George, and re-implemented and re-
 All rights reserved.
 
 ## Before start, you have to install:
-#### [Annovar](https://doc-openbio.readthedocs.io/projects/annovar/en/latest/)
+#### [ANNOVAR](https://doc-openbio.readthedocs.io/projects/annovar/en/latest/)
 #### [BEDTools](https://bedtools.readthedocs.io/en/latest/index.html)
 
 ## Input:
