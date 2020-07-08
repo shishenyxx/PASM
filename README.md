@@ -2,8 +2,7 @@
 ## Here are scripts for Postzygotic Amplicon Sequencing for Mosaicism (PASM). The scripts are useful for the calculation of variant allelic fraction based on deep sequencing data.
 
 --------------
-For the calculation of confidence intervals, you can choose binomial confidence interval in R (Clopper-Pearson exact estimation by default), or the methods described in [Yang and Liu et al. 2017] (doi.org/10.1038/s41598-017-15814-7).
---------------
+For the calculation of confidence intervals, you can choose binomial confidence interval in R (Clopper-Pearson exact estimation by default), or the methods described in [Yang and Liu et al. 2017] (https://doi.org/10.1038/s41598-017-15814-7).
 
 The [first part](https://github.com/shishenyxx/PASM/blob/master/get_ref_alt_baseQ_corrected_calculate_only_2016_12_03.pl) is a pileup filter, it takes in SAMTools mpileup results and calculate different characters to count the bases, written by Jiarui Li, modified by Xiaoxu Yang and Xianing Zheng. (2015-03-24)
 
