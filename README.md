@@ -30,4 +30,4 @@ A [Snakemake pipeline](https://github.com/shishenyxx/PASM/tree/master/Snakemake_
 
 --------------
 ## Related publications:
-
+[Amplicon resequencing identified parental mosaicism for approximately 10% of “de novo” SCN1A mutations in children with Dravet syndrome (2015)](https://doi.org/10.1002/humu.22819)
