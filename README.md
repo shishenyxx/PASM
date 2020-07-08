@@ -7,7 +7,6 @@ Here are scripts initially written for Postzygotic Amplicon Sequencing for Mosai
 ## Versions and updates
 For the calculation of confidence intervals, you can choose [exact binomial confidence interval in R](https://www.rdocumentation.org/packages/stats/versions/3.6.2/topics/binom.test) ([Clopper-Pearson interval](https://en.wikipedia.org/wiki/Binomial_proportion_confidence_interval) by default), or the methods described in [Yang and Liu et al. 2017](https://doi.org/10.1038/s41598-017-15814-7).
 
---------------
 ### Snakemake pipelines:
 
 A [Snakemake pipeline](https://github.com/shishenyxx/PASM/tree/master/Snakemake_pipeline) with exact binomial CIs was implemented by Xin Xu and Xiaoxu Yang. (2019-08-12)
@@ -23,16 +22,16 @@ A [python version](https://github.com/shishenyxx/PASM/blob/master/CI_calculator.
 
 
 ### Perl and R versions:
+#### Before you start the Perl + R version:
+Note that the Perl package [Statistics::R](https://metacpan.org/pod/Statistics::R) is used to call the [yyxMosaicHunter](https://github.com/Yyx2626/yyxMosaicHunter) package in R written by Adam Yongxin Ye.
+Dependencies of yyxMosaicHunter 0.1.4 are: `Rcpp`
+`pryr`. (2014-11-11)
 
+#### Instructions for the Perl + R version:
 The [first part of the perl version](https://github.com/shishenyxx/PASM/blob/master/get_ref_alt_baseQ_corrected_calculate_only_2016_12_03.pl) is a pileup filter, it takes in SAMTools mpileup results and calculate different characters to count the bases, written by Jiarui Li, modified by Xiaoxu Yang and Xianing Zheng. (2015-03-24)
 
 You can also only [output the base qualtiy](https://github.com/shishenyxx/PASM/blob/master/get_ref_alt_baseQ_corrected_2016_12_03_output_basequality.pl) and deal with the base qualities in R. 
 
-
-#### Before you start
-Note that the Perl package [Statistics::R](https://metacpan.org/pod/Statistics::R) is used to call the [yyxMosaicHunter](https://github.com/Yyx2626/yyxMosaicHunter) package in R written by Adam Yongxin Ye.
-Dependencies of yyxMosaicHunter 0.1.4 are: `Rcpp`
-`pryr`. (2014-11-11)
 
 If you want to calculate the CIs with PASM Bayesian model, you can use [this perl script](https://github.com/shishenyxx/PASM/blob/master/get_ref_alt_baseQ_corrected_2016_12_03.pl), or a [older version perl script](https://github.com/shishenyxx/PASM/blob/master/old_get_ref_alt_baseQ_corrected_2016_07_14.pl). 
 
