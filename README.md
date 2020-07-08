@@ -41,7 +41,7 @@ If you want to calculate the CIs with PASM Bayesian model, you can use [this per
 
 
 ## Related publications:
-* [Autism risk in offspring can be assessed through quantification of male sperm mosaicism](https://doi.org/10.1038/s41591-019-0711-0) <i>(Nat. Med. 2020)</i>
+* Autism risk in offspring can be assessed through quantification of male sperm mosaicism <i>([Nat. Med. 2020](https://doi.org/10.1038/s41591-019-0711-0))</i>
 * [mTOR pathway somatic variants and the molecular pathogenesis of hemimegalencephaly](https://doi.org/10.1002/epi4.12377) <i>(Epi. Open 2020)</i>
 * [Genomic mosaicism in the pathogenesis and inheritance of a Rett syndrome cohort](https://doi.org/10.1038/s41436-018-0348-2) <i>(Genet. Med. 2019)</i>
 * [Mosaicism and incomplete penetrance of PCDH19 mutations](http://dx.doi.org/10.1136/jmedgenet-2017-105235) <i>(J. Med. Genet. 2019)</i>
