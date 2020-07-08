@@ -2,7 +2,7 @@
 #developed by LiJR
 #version=0.1 modified by Yangxx
 #date=2015-03-24
-
+##This script is only used as an intermediate processor to output the base qualities, users can also filter by themselves with bash commands.
 #use Statistics::R;
 #my $R = Statistics::R->new();
 #	$R->run(q`.libPaths("/rd/home/yangxx/R/x86_64-pc-linux-gnu-library/3.1/")`);
