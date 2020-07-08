@@ -4,7 +4,7 @@ localrules: all, generate_avinput, generate_bed, \
             summarize_results, split_avinput, gather_tumor_ci_results, \
             gather_homopolyer_results, _gather_normal_ci_results, \
 
-#split the input into N(10 by default) equally sized input parts, note if the input number of variant is too small and you don't have enough variants for int((\$1+N-1)/N), you have to split it manually in the folder ${SCRATCH_FOLDER}/split_avinput/${SAMPLE_ID}, also if N number is changed here, you must change int((\$1+N-1)/N) accordingly
+#split the input into N(10 by default) equally sized input files to accerlate the process, note if the input number of variant is too small and you don't have enough variants for int((\$1+N-1)/N), you have to split it manually in the folder ${SCRATCH_FOLDER}/split_avinput/${SAMPLE_ID}, also if N number is changed here, you must change int((\$1+N-1)/N) accordingly
 SPLITS = ["%02d" % x for x in range(10)]
 
 OUT_DIR = config['out_dir']
@@ -105,7 +105,7 @@ rule generate_bed:
 
 
 
-#split avinput to smaller files
+#split avinput to smaller files, if you changed the N number above, have to change it again here in "int((\$1+N-1)/N)"
 rule split_avinput:
     input:
         avinput = OUT_DIR + "/avintput/{sample}.avinput",
@@ -264,7 +264,7 @@ rule annovar_gnomad:
         "    {ANNOVAR_DB}"
         "    -outfile {params.outfile}"
 
-
+#make sure your cluster has bedtools installed or your account can run bedtools directly
 rule check_repeats:
     input:
         bed = OUT_DIR + "/bed/{sample}.bed",
