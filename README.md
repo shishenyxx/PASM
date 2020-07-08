@@ -1,5 +1,5 @@
 # PASM
-## Here are scripts for Postzygotic Amplicon Sequencing for Mosaicism (PASM). We provided a perl+R version, two standalone python versions, and a Snakemake pipeline. The scripts and pipelines are useful for the calculation of variant allelic fraction based on deep sequencing data as well as annotations for postzygotic mosaic variant studies.
+Here are scripts initially written for Postzygotic Amplicon Sequencing for Mosaicism (PASM). We provided a perl+R version, two standalone python versions, and a Snakemake pipeline. The scripts and pipelines are useful for the calculation of variant allelic fraction (AF) based on not only amplicon based deep sequencing data, but also the AF estimation as well as annotations for postzygotic mosaic variant studies from all kinds of different NGS data.
 
 --------------
 For the calculation of confidence intervals, you can choose [exact binomial confidence interval in R](https://www.rdocumentation.org/packages/stats/versions/3.6.2/topics/binom.test) ([Clopper-Pearson interval](https://en.wikipedia.org/wiki/Binomial_proportion_confidence_interval) by default), or the methods described in [Yang and Liu et al. 2017](https://doi.org/10.1038/s41598-017-15814-7).
@@ -27,3 +27,7 @@ A [new python version](https://github.com/shishenyxx/PASM/blob/master/2019-09-25
 --------------
 
 A [Snakemake pipeline](https://github.com/shishenyxx/PASM/tree/master/Snakemake_pipeline) with exact binomial CIs was implemented by Xin Xu. (2019-08-12)
+
+--------------
+## Related publications:
+
