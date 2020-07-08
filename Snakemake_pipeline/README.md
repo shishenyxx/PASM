@@ -1,6 +1,6 @@
 # Snakemake pipeline for annotations and the calculations of exact binomial confidence intervals
 
-The pipeline is initially written by Martin Breuss and Renee D. George, re-implemented and re-wrote by Xin Xu and Xiaoxu Yang, with great help form Martin Breuss, and is maintained by Xin Xu and Xiaoxu Yang.
+The pipeline is re-implemented and re-wrote by Xin Xu and Xiaoxu Yang, with great help form Martin Breuss, based on a previous version written by Martin Breuss and Renee D. George, and is maintained by Xin Xu and Xiaoxu Yang.
 
 The annotation pipeline takes a list of candidate variants as input, calculates and annotates the information needed for downstream analysis and calculate the number of reference counts, alternative counts, mutant allelic fractions (MAFs), and the exact binomial confidence intervals of the MAFs from the "tumor" bam. Details about the input and output are listed below:
 
