@@ -40,6 +40,7 @@ A [Snakemake pipeline](https://github.com/shishenyxx/PASM/tree/master/Snakemake_
 * [Somatic double-hit in MTOR and RPS6 in hemimegalencephaly with intractable epilepsy](https://doi.org/10.1093/hmg/ddz194) <i>(Hum. Mol. Genet. 2019)</i>
 * [ATP1A3 mosaicism in families with alternating hemiplegia of childhood](https://doi.org/10.1111/cge.13539) <i>(Clin. Genet. 2019)</i>
 * [Distinctive types of postzygotic single-nucleotide mosaicisms in healthy individuals revealed by genome-wide profiling of multiple organs](https://doi.org/10.1371/journal.pgen.1007395) <i>(PLoS Genet. 2018)</i>
+* [MosaicHunter: accurate detection of postzygotic single-nucleotide mosaicism through next-generation sequencing of unpaired, trio, and paired samples](https://doi.org/10.1093/nar/gkx024) <i>(Nucleic acids res. 2017)</i>
 * [Ultrasensitive and high-efficiency screen of de novo low-frequency mutations by o2n-seq](https://doi.org/10.1038/ncomms15335) <i>(Nat. Comms. 2017)</i>
 * [Postzygotic single‐nucleotide mosaicisms contribute to the etiology of autism spectrum disorder and autistic traits and the origin of mutations.](https://doi.org/10.1002/humu.23255) <i>(Hum. Mutat. 2017)</i>
 * [Genomic mosaicism in paternal sperm and multiple parental tissues in a Dravet syndrome cohort](https://doi.org/10.1038/s41598-017-15814-7) <i>(Sci. Rep. 2017)</i>
