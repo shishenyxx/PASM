@@ -8,4 +8,4 @@ Implemented by Xin Xu with input from Xiaoxu Yang and all the previous versions 
 ## Usage of the tool:
 python new_compute_binom.py [CHR] [POS] [REF] [ALT] [BAM_PATH]
 
-Note that you can edit to chose the methods to calculate confidence intervals (PASM CI, [Clopper-Pearson exact binomial CI, and Wilson score CI](https://en.wikipedia.org/wiki/Binomial_distribution#Confidence_intervals)).
+Note that you can edit to chose the methods to calculate confidence intervals ([PASM CI](https://doi.org/10.1002/humu.22819), [Clopper-Pearson exact binomial CI, and Wilson score CI](https://en.wikipedia.org/wiki/Binomial_distribution#Confidence_intervals)).
