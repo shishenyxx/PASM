@@ -30,4 +30,5 @@ A [Snakemake pipeline](https://github.com/shishenyxx/PASM/tree/master/Snakemake_
 
 --------------
 ## Related publications:
-[Amplicon resequencing identified parental mosaicism for approximately 10% of “de novo” SCN1A mutations in children with Dravet syndrome (2015)](https://doi.org/10.1002/humu.22819)
+[Amplicon resequencing identified parental mosaicism for approximately 10% of “de novo” SCN1A mutations in children with Dravet syndrome.](https://doi.org/10.1002/humu.22819)(2015)
+[Postzygotic single‐nucleotide mosaicisms contribute to the etiology of autism spectrum disorder and autistic traits and the origin of mutations.](https://doi.org/10.1002/humu.23255)(2017)
