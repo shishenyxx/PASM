@@ -5,11 +5,14 @@
 The pipeline is initially written by Renee D. George, and re-implemented and re-worte by Xin Xu, with help form Xiaoxu Yang and Martin Breuss.
 All rights reserved.
 
-## Before start, you have to install:
+
+## Before start, make sure you have:
 #### [ANNOVAR](https://doc-openbio.readthedocs.io/projects/annovar/en/latest/)
 #### [BEDTools](https://bedtools.readthedocs.io/en/latest/index.html)
 #### [NumPy](https://numpy.org/), [pandas](https://pandas.pydata.org/), and [subprocess](https://docs.python.org/3/library/subprocess.html) packages should be available for python
-#### add the [lib](https://github.com/shishenyxx/PASM/tree/master/Snakemake_pipeline/lib) folder to your PYTHONPATH 
+#### add the [lib](https://github.com/shishenyxx/PASM/tree/master/Snakemake_pipeline/lib) folder to your PYTHONPATH
+
+
 ## Input:
 These are headers of the input file list.
 #### sample
@@ -26,6 +29,7 @@ Path to the "normal" bam file.
 Path to the list of variants you want to annotate and calculate for the "tumor" bam. If you want to compare the same variant in tumor and normal, add another input row and switch the "tumor" and "normal".
 #### gvcf_path
 Path to the variant quality score recalibrated gvcfs from haplotype caller. This will help the calculation such as "near indel".
+
 
 ## Config files:
 These are files you need to prepare for the annotation scripts, saved in the file snake_conf.yaml
@@ -53,6 +57,7 @@ Repeatmask track from UCSC genome browser (corresponding to your reference genom
 Additional genomic repeats annotated to the output table in bed format (corresponding to your reference genome file).
 #### segdup
 Segmental duplications annotated to the output table in bed format (corresponding to your reference genome file).
+
 
 ## Output:
 These are headers of the output table. The output table has the same number of entries as the sum of each of the files from "vcf_path".
