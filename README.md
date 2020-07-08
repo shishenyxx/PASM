@@ -8,12 +8,12 @@ The [first part](https://github.com/shishenyxx/PASM/blob/master/get_ref_alt_base
 
 --------------
 
-You can also only [output the base qualtiy](https://github.com/shishenyxx/PASM/blob/master/get_ref_alt_baseQ_corrected_2016_12_03_output_basequality.pl) and deal with the base qalities in R. 
+You can also only [output the base qualtiy](https://github.com/shishenyxx/PASM/blob/master/get_ref_alt_baseQ_corrected_2016_12_03_output_basequality.pl) and deal with the base qualities in R. 
 
 --------------
 
 If you also want to calculate the CIs with PASM Bayesian model, you can use [this script](https://github.com/shishenyxx/PASM/blob/master/get_ref_alt_baseQ_corrected_2016_12_03.pl), or a [older version](https://github.com/shishenyxx/PASM/blob/master/old_get_ref_alt_baseQ_corrected_2016_07_14.pl). Note that the Perl package Statistics::R is used to call the [yyxMosaicHunter](https://github.com/Yyx2626/yyxMosaicHunter) package in R written by Adam Yongxin Ye.
-Dependencisof yyxMosaicHunter 0.1.4 are: `Rcpp`
+Dependencies of yyxMosaicHunter 0.1.4 are: `Rcpp`
 `pryr`. (2014-11-11)
 
 --------------
@@ -26,4 +26,4 @@ A [new python version](https://github.com/shishenyxx/PASM/blob/master/2019-09-25
 
 --------------
 
-A [snakemake pipeline](https://github.com/shishenyxx/PASM/tree/master/Snakemake_pipeline) with exact binomial CIs was implemented by Xin Xu. (2019-08-12) 
+A [Snakemake pipeline](https://github.com/shishenyxx/PASM/tree/master/Snakemake_pipeline) with exact binomial CIs was implemented by Xin Xu. (2019-08-12)
