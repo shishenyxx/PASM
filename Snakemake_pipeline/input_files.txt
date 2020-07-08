@@ -1,1 +1,2 @@
 #sample	tumor	normal	tumor_path	normal_path	vcf_path	gvcf_path
+<user defined name> <name of sample in tumor bam header> <name of sample in normal bam header> <path to tumor bam> <path to normal bam> <path to candidate variant list you want to calculate in the tumor bam> <path to haplotypecaller gvcf result for the tumor bam> 
