@@ -54,6 +54,7 @@ Additional genomic repeats annotated to the output table in bed format (correspo
 Segmental duplications annotated to the output table in bed format (corresponding to your reference genome file).
 
 ## Output:
+These are headers of the output table. The output table has the same number of entries as the sum of each of the files from "vcf_path".
 #### ID
 The name of the "tumor" bam tag where the information of this line is calculated from.
 #### CHROM
