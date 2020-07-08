@@ -1,5 +1,5 @@
 # PASM
---------------
+
 ## Overview
 Here are scripts initially written for Postzygotic Amplicon Sequencing for Mosaicism (PASM). We provided a perl+R version, two standalone python versions, and a Snakemake pipeline. The scripts and pipelines are useful for the calculation of variant allelic fraction (AF) based on not only amplicon based deep sequencing data, but also the AF estimation as well as annotations for postzygotic mosaic variant studies from all kinds of different NGS data.
 
@@ -12,17 +12,15 @@ For the calculation of confidence intervals, you can choose [exact binomial conf
 
 A [Snakemake pipeline](https://github.com/shishenyxx/PASM/tree/master/Snakemake_pipeline) with exact binomial CIs was implemented by Xin Xu and Xiaoxu Yang. (2019-08-12)
 
---------------
+
 
 ### Python versions:
 
 A [new python version](https://github.com/shishenyxx/PASM/tree/master/2019-09-25-new-python-MAF-binom-calculator) with exact binomial CIs was implemented by Xin Xu and Xiaoxu Yang. (2019-07-24)
 
---------------
 
 A [python version](https://github.com/shishenyxx/PASM/blob/master/CI_calculator.py) was implemented by Xianing Zheng. (2016-04-17)
 
---------------
 
 ### Perl and R versions:
 
@@ -30,7 +28,7 @@ The [first part of the perl version](https://github.com/shishenyxx/PASM/blob/mas
 
 You can also only [output the base qualtiy](https://github.com/shishenyxx/PASM/blob/master/get_ref_alt_baseQ_corrected_2016_12_03_output_basequality.pl) and deal with the base qualities in R. 
 
---------------
+
 #### Before you start
 Note that the Perl package [Statistics::R](https://metacpan.org/pod/Statistics::R) is used to call the [yyxMosaicHunter](https://github.com/Yyx2626/yyxMosaicHunter) package in R written by Adam Yongxin Ye.
 Dependencies of yyxMosaicHunter 0.1.4 are: `Rcpp`
