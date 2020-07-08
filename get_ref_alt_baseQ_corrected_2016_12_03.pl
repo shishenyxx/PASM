@@ -143,7 +143,7 @@ if($depth>10){
 
 
 
-#尝试重新输出积分区域
+#Re-output the interval based on depth
 	$mle_calculate_only=$all{$alt1}/($all{$ref}+$all{$alt1});
 	$mle_interval=1.5/sqrt($depth);
 	$mle_lw=$mle_calculate_only-$mle_interval;
@@ -165,26 +165,26 @@ if($depth>10){
 		$R->run(q`quality_ref <- as.character(quality_ref_in)`);
 		$R->run(q`quality_alt <- as.character(quality_alt_in)`);
 		
-#尝试把MLE的积分区间传过去		
+#Transfer the MLE interval to R		
 		$R->set('int_region_mle_lw',$mle_lw);
 		$R->set('int_region_mle_up',$mle_up);
 		
-#尝试把ref正、ref负、alt正、alt负传过去
+#Transfer ref+、ref-、alt+、alt- to R
 		$R->set('ref_forward',$count{$ref});
 		$R->set('ref_reverse',$count{lc($ref)});
 		$R->set('alt_forward',$count{$alt1});
 		$R->set('alt_reverse',$count{lc($alt1)});
-		
+#Estimate AF		
 		$R->run(q`mh_result <- yyx_wrapped_mosaic_hunter_for_one_site(quality_ref, quality_alt)`);
 #		$R->run(q`curve(mh_result$likelihood_fun(x), 0, 1, n=1001L)`);
 		$R->run(q`cred_int <- yyx_get_credible_interval(mh_result$likelihood_fun, c(int_region_mle_lw,int_region_mle_up), 0.95)`);
-		
+#Fisher's exact test in R		
 		$R->run(q`p_fisher<-fisher.test(matrix(c(ref_forward,ref_reverse,alt_forward,alt_reverse),nrow=2))$p.value`);
 #		$MH=$R->get('mh_result$ref_het_alt_mosaic_posterior');
 #		print join ("\t",@{$MH});
 	
 
-		
+#Transfer back and output		
 #		($p_hom_ref,$p_het,$p_hom_alt,$p_mosaic)=@{$mh_result};
 		print "$chr\t$pos\t$depth\t$ref\t$alt1\t$I\t$D\t$count{A}\t$count{C}\t$count{G}\t$count{T}\t$count{a}\t$count{c}\t$count{g}\t$count{t}\t";
 		$MLE=$R->get('cred_int$MLE');
