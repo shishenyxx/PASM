@@ -152,7 +152,7 @@ if($depth>10){
 #		$R->set('quality_ref_in',$quality_ref);
 #		$R->set('quality_alt_in',$quality_alt);
 #		
-#尝试把ref正、ref负、alt正、alt负传过去
+#Transfer ref+銆乺ef-銆乤lt+銆乤lt- to R
 		$R->set('ref_forward',$count{$ref});
 		$R->set('ref_reverse',$count{lc($ref)});
 		$R->set('alt_forward',$count{$alt1});
@@ -164,7 +164,7 @@ if($depth>10){
 #		$R->run(q`curve(mh_result$likelihood_fun(x), 0, 1, n=1001L)`);
 #		$R->run(q`cred_int <- yyx_get_credible_interval(mh_result$likelihood_fun, c(0,1), 0.95)`);
 
-#算fisher's_exact_test
+#Calculate p from a fisher's_exact_test
 		$R->run(q`p_fisher<-fisher.test(matrix(c(ref_forward,ref_reverse,alt_forward,alt_reverse),nrow=2))$p.value`);		
 #		$MH=$R->get('mh_result$ref_het_alt_mosaic_posterior');
 #		print join ("\t",@{$MH});
