@@ -1,4 +1,7 @@
 # Python version of PASM
+
+Written by Xin Xu, maintained by Xin Xu and Xiaoxu Yang
+
 ## Before starting:
 [NumPy](https://numpy.org/), [pandas](https://pandas.pydata.org/), and [scipy](https://www.scipy.org/) packages should be available for your Python.
 
