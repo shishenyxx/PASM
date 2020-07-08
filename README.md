@@ -9,7 +9,7 @@ For the calculation of confidence intervals, you can choose [exact binomial conf
 
 ### Snakemake pipelines:
 
-A [Snakemake pipeline](https://github.com/shishenyxx/PASM/tree/master/Snakemake_pipeline) with exact binomial CIs and detailed annotations was implemented by Xin Xu and Xiaoxu Yang, supervised by Martin Breuss. (2019-08-12)
+A [Snakemake pipeline](https://github.com/shishenyxx/PASM/tree/master/Snakemake_pipeline) with exact binomial CIs and detailed annotations was implemented by Xin Xu and Xiaoxu Yang, with great input form Martin Breuss. (2019-08-12)
 
 
 
