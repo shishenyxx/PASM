@@ -7,9 +7,21 @@ Here are scripts initially written for Postzygotic Amplicon Sequencing for Mosai
 ## Versions and updates
 For the calculation of confidence intervals, you can choose [exact binomial confidence interval in R](https://www.rdocumentation.org/packages/stats/versions/3.6.2/topics/binom.test) ([Clopper-Pearson interval](https://en.wikipedia.org/wiki/Binomial_proportion_confidence_interval) by default), or the methods described in [Yang and Liu et al. 2017](https://doi.org/10.1038/s41598-017-15814-7).
 
-The [first part](https://github.com/shishenyxx/PASM/blob/master/get_ref_alt_baseQ_corrected_calculate_only_2016_12_03.pl) is a pileup filter, it takes in SAMTools mpileup results and calculate different characters to count the bases, written by Jiarui Li, modified by Xiaoxu Yang and Xianing Zheng. (2015-03-24)
+--------------
+
+A [Snakemake pipeline](https://github.com/shishenyxx/PASM/tree/master/Snakemake_pipeline) with exact binomial CIs was implemented by Xin Xu and Xiaoxu Yang. (2019-08-12)
 
 --------------
+
+A [new python version](https://github.com/shishenyxx/PASM/tree/master/2019-09-25-new-python-MAF-binom-calculator) with exact binomial CIs was implemented by Xin Xu and Xiaoxu Yang. (2019-07-24)
+
+--------------
+
+A [python version](https://github.com/shishenyxx/PASM/blob/master/CI_calculator.py) was implemented by Xianing Zheng. (2016-04-17)
+
+--------------
+
+The [first part of the perl version](https://github.com/shishenyxx/PASM/blob/master/get_ref_alt_baseQ_corrected_calculate_only_2016_12_03.pl) is a pileup filter, it takes in SAMTools mpileup results and calculate different characters to count the bases, written by Jiarui Li, modified by Xiaoxu Yang and Xianing Zheng. (2015-03-24)
 
 You can also only [output the base qualtiy](https://github.com/shishenyxx/PASM/blob/master/get_ref_alt_baseQ_corrected_2016_12_03_output_basequality.pl) and deal with the base qualities in R. 
 
@@ -21,17 +33,8 @@ Dependencies of yyxMosaicHunter 0.1.4 are: `Rcpp`
 
 --------------
 
-A [python version](https://github.com/shishenyxx/PASM/blob/master/CI_calculator.py) was implemented by Xianing Zheng. (2016-04-17)
 
---------------
 
-A [new python version](https://github.com/shishenyxx/PASM/tree/master/2019-09-25-new-python-MAF-binom-calculator) with exact binomial CIs was implemented by Xin Xu and Xiaoxu Yang. (2019-07-24)
-
---------------
-
-A [Snakemake pipeline](https://github.com/shishenyxx/PASM/tree/master/Snakemake_pipeline) with exact binomial CIs was implemented by Xin Xu and Xiaoxu Yang. (2019-08-12)
-
---------------
 ## Related publications:
 * [Autism risk in offspring can be assessed through quantification of male sperm mosaicism](https://doi.org/10.1038/s41591-019-0711-0) <i>(Nat. Med. 2020)</i>
 * [mTOR pathway somatic variants and the molecular pathogenesis of hemimegalencephaly](https://doi.org/10.1002/epi4.12377) <i>(Epi. Open 2020)</i>
