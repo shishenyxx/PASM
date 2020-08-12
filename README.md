@@ -41,7 +41,7 @@ If you want to calculate the CIs with PASM Bayesian model, you can use [this per
 
 
 ## Related publications:
-* Somatic mosaicism in the mature brain reveals clonal cellular distributions during cortical development. <i>([BioRxiv 2020](https://www.biorxiv.org/content/10.1101/2020.08.10.244814v1))</i>
+* Somatic mosaicism in the mature brain reveals clonal cellular distributions during cortical development. <i>([bioRxiv 2020](https://www.biorxiv.org/content/10.1101/2020.08.10.244814v1))</i>
 * Autism risk in offspring can be assessed through quantification of male sperm mosaicism. <i>([Nat. Med. 2020](https://doi.org/10.1038/s41591-019-0711-0))</i>
 * mTOR pathway somatic variants and the molecular pathogenesis of hemimegalencephaly. <i>([Epi. Open 2020](https://doi.org/10.1002/epi4.12377))</i>
 * Genomic mosaicism in the pathogenesis and inheritance of a Rett syndrome cohort. <i>([Genet. Med. 2019](https://doi.org/10.1038/s41436-018-0348-2))</i>
