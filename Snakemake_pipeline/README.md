@@ -29,7 +29,7 @@ Path to the "normal" bam file.
 #### vcf_path
 Path to the list of variants you want to annotate and calculate for the "tumor" bam. If you want to compare the same variant in tumor and normal, add another input row and switch the "tumor" and "normal".
 #### gvcf_path
-Path to the variant quality score recalibrated gvcfs from haplotype caller. This will help the calculation such as "near indel".
+Path to the variant quality score recalibrated vcfs from haplotype caller. Note that the input should be in vcf format. This will help the calculation such as "near indel".
 
 ----------------------------
 
