@@ -1,7 +1,7 @@
 # PASM and MPAS
 
 ## Overview
-Here are scripts initially written for Postzygotic Amplicon Sequencing for Mosaicism (PASM) and some codes we now define as Massive Parallel Amplicon Sequencing (MPAS). We provided a perl+R version, two standalone python versions, and a Snakemake pipeline. The scripts and pipelines are useful for the calculation of variant allelic fraction (AF) based on not only amplicon based deep sequencing data, but also the AF estimation as well as annotations for postzygotic mosaic variant studies from all kinds of Next Generation Sequencing (NGS) data.
+Here are scripts initially written for Postzygotic Amplicon Sequencing for Mosaicism (PASM) and some codes for the method we now define as Massive Parallel Amplicon Sequencing (MPAS). We provided a perl+R version, two standalone python versions, and a Snakemake pipeline. The scripts and pipelines are useful for the calculation of variant allelic fraction (AF) based on not only amplicon based deep sequencing data, but also the AF estimation as well as annotations for postzygotic mosaic variant studies from all kinds of Next Generation Sequencing (NGS) data.
 
 --------------
 ## Versions and updates
