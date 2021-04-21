@@ -5,7 +5,7 @@ Here are scripts initially written for Postzygotic Amplicon Sequencing for Mosai
 
 --------------
 ## Versions and updates
-For the calculation of confidence intervals, you can choose [exact binomial confidence interval in R](https://www.rdocumentation.org/packages/stats/versions/3.6.2/topics/binom.test) ([Clopper-Pearson interval](https://en.wikipedia.org/wiki/Binomial_proportion_confidence_interval) by default), or the methods described in <i>[Xu , Yang, and Wu et al. Wei and Zhang. 2015](https://doi.org/10.1002/humu.22819)</i> and <i>[Yang and Liu et al. Wu, Wei, and Zhang. 2017](https://doi.org/10.1038/s41598-017-15814-7)</i>, different versions of scripts are available.
+For the calculation of confidence intervals, you can choose [exact binomial confidence interval in R](https://www.rdocumentation.org/packages/stats/versions/3.6.2/topics/binom.test) ([Clopper-Pearson interval](https://en.wikipedia.org/wiki/Binomial_proportion_confidence_interval) by default), or the iterative methods which considers the base qualities from each base, described in <i>[Xu , Yang, and Wu et al. Wei and Zhang. 2015](https://doi.org/10.1002/humu.22819)</i> and <i>[Yang and Liu et al. Wu, Wei, and Zhang. 2017](https://doi.org/10.1038/s41598-017-15814-7)</i>, different versions of scripts are available.
 
 ### Snakemake pipelines:
 
