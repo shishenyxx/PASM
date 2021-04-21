@@ -41,7 +41,8 @@ If you want to calculate the CIs with PASM Bayesian model, you can use [this per
 
 
 ## Related publications:
-* DeepMosaic: Control-independent mosaic single nucleotide variant detection using deep convolutional neural networks. <i>([bioRxiv 2020](https://www.biorxiv.org/content/10.1101/2020.11.14.382473v1))</i>
+* Comprehensive identification of somatic nucleotide variants in human brain tissue. <i>([Genome Bio. 2021](https://genomebiology.biomedcentral.com/articles/10.1186/s13059-021-02285-3))</i>
+* DeepMosaic: Control-independent mosaic single nucleotide variant detection using deep convolutional neural networks. <i>([bioRxiv 2020](https://www.biorxiv.org/content/10.1101/2020.11.14.382473v2.full))</i>
 * Temporal stability of human sperm mosaic mutations results in life-long threat of transmission to offspring. <i>([bioRxiv 2020](https://www.biorxiv.org/content/10.1101/2020.10.14.339796v1.full))</i>
 * Somatic mosaicism in the mature brain reveals clonal cellular distributions during cortical development. <i>([bioRxiv 2020](https://www.biorxiv.org/content/10.1101/2020.08.10.244814v1.full))</i>
 * Comprehensive identification of somatic nucleotide variants in human brain tissue. <i>([bioRxiv 2020](https://www.biorxiv.org/content/10.1101/2020.10.10.332213v1.full))</i>
