@@ -43,7 +43,7 @@ If you want to calculate the CIs with PASM Bayesian model, you can use [this per
 ## Related publications:
 * Comprehensive identification of somatic nucleotide variants in human brain tissue. <i>([Genome Bio. 2021](https://genomebiology.biomedcentral.com/articles/10.1186/s13059-021-02285-3))</i>
 * DeepMosaic: Control-independent mosaic single nucleotide variant detection using deep convolutional neural networks. <i>([bioRxiv 2020](https://www.biorxiv.org/content/10.1101/2020.11.14.382473v2.full))</i>
-* Temporal stability of human sperm mosaic mutations results in life-long threat of transmission to offspring. <i>([bioRxiv 2020](https://www.biorxiv.org/content/10.1101/2020.10.14.339796v1.full))</i>
+* Developmental and temporal characteristics of clonal sperm mosaicism. <i>([Cell 2021](www.doi.org/10.1016/j.cell.2021.07.024 ))</i>
 * Somatic mosaicism in the mature brain reveals clonal cellular distributions during cortical development. <i>([bioRxiv 2020](https://www.biorxiv.org/content/10.1101/2020.08.10.244814v1.full))</i>
 * Autism risk in offspring can be assessed through quantification of male sperm mosaicism. <i>([Nat. Med. 2020](https://doi.org/10.1038/s41591-019-0711-0))</i>
 * mTOR pathway somatic variants and the molecular pathogenesis of hemimegalencephaly. <i>([Epi. Open 2020](https://doi.org/10.1002/epi4.12377))</i>
