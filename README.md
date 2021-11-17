@@ -67,7 +67,7 @@ If you want to calculate the CIs with PASM Bayesian model, you can use [this per
 
 -----------------------------------
 ### 5. Cite the code:
-* Yang X and Breuss MW<i> et al.</i> Gleeson JG. 2021. Developmental and temporal characteristics of clonal sperm mosaicism. <i>[Cell](http://www.doi.org/10.1016/j.cell.2021.07.024)</i> 
-* Yang X and Liu A<i> et al.</i> Wei L and Zhang Y. 2017. Genomic mosaicism in paternal sperm and multiple parental tissues in a Dravet syndrome cohort. <i>[Sci. Rep.](https://doi.org/10.1038/s41598-017-15814-7)</i>
-* Xu X, Yang X, and Wu Q<i> et al. Wei L and Zhang Y. </i> 2015. Amplicon resequencing identified parental mosaicism for approximately 10% of <i>“de novo” SCN1A</i> mutations in children with Dravet syndrome. <i>[Hum. Mutat.](https://doi.org/10.1002/humu.22819)</i>
+* Yang X and Breuss MW <i>et al.</i> Gleeson JG. 2021. Developmental and temporal characteristics of clonal sperm mosaicism. <i>[Cell](http://www.doi.org/10.1016/j.cell.2021.07.024)</i> 
+* Yang X and Liu A <i>et al.</i> Wei L and Zhang Y. 2017. Genomic mosaicism in paternal sperm and multiple parental tissues in a Dravet syndrome cohort. <i>[Sci. Rep.](https://doi.org/10.1038/s41598-017-15814-7)</i>
+* Xu X, Yang X, and Wu Q <i>et al.</i> Wei L and Zhang Y. 2015. Amplicon resequencing identified parental mosaicism for approximately 10% of <i>“de novo” SCN1A</i> mutations in children with Dravet syndrome. <i>[Hum. Mutat.](https://doi.org/10.1002/humu.22819)</i>
 
