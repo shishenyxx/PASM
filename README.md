@@ -1,10 +1,10 @@
 # PASM and MPAS
 
-## Overview
+## 1. Overview
 Here are scripts initially written for Postzygotic Amplicon Sequencing for Mosaicism (PASM) and some codes for the method we now define as Massive Parallel Amplicon Sequencing (MPAS). We provided a perl+R version, two standalone python versions, and a Snakemake pipeline. The scripts and pipelines are useful for the calculation of variant allelic fraction (AF) based on not only amplicon based deep sequencing data, but also the AF estimation as well as annotations for postzygotic mosaic variant studies from all kinds of Next Generation Sequencing (NGS) data.
 
 --------------
-## Versions and updates
+## 2. Versions and updates
 For the calculation of confidence intervals, you can choose [exact binomial confidence interval in R](https://www.rdocumentation.org/packages/stats/versions/3.6.2/topics/binom.test) ([Clopper-Pearson interval](https://en.wikipedia.org/wiki/Binomial_proportion_confidence_interval) by default), or the iterative methods which considers the base qualities from each base, described in <i>[Xu , Yang, and Wu et al. Wei and Zhang. 2015](https://doi.org/10.1002/humu.22819)</i> and <i>[Yang and Liu et al. Wu, Wei, and Zhang. 2017](https://doi.org/10.1038/s41598-017-15814-7)</i>, different versions of scripts are available.
 
 ### Snakemake pipelines:
@@ -40,7 +40,7 @@ If you want to calculate the CIs with PASM Bayesian model, you can use [this per
 
 
 
-## Related publications:
+## 3. Related publications:
 * Developmental and temporal characteristics of clonal sperm mosaicism. <i>([Cell 2021](http://www.doi.org/10.1016/j.cell.2021.07.024 ))</i>
 * Comprehensive identification of somatic nucleotide variants in human brain tissue. <i>([Genome Bio. 2021](https://genomebiology.biomedcentral.com/articles/10.1186/s13059-021-02285-3))</i>
 * DeepMosaic: Control-independent mosaic single nucleotide variant detection using deep convolutional neural networks. <i>([bioRxiv 2021](https://www.biorxiv.org/content/10.1101/2020.11.14.382473v2.full))</i>
@@ -57,3 +57,17 @@ If you want to calculate the CIs with PASM Bayesian model, you can use [this per
 * Postzygotic single‐nucleotide mosaicisms contribute to the etiology of autism spectrum disorder and autistic traits and the origin of mutations. <i>([Hum. Mutat. 2017](https://doi.org/10.1002/humu.23255))</i>
 * Genomic mosaicism in paternal sperm and multiple parental tissues in a Dravet syndrome cohort. <i>([Sci. Rep. 2017](https://doi.org/10.1038/s41598-017-15814-7))</i>
 * Amplicon resequencing identified parental mosaicism for approximately 10% of <i>“de novo” SCN1A</i> mutations in children with Dravet syndrome. <i>([Hum. Mutat. 2015](https://doi.org/10.1002/humu.22819))</i>
+
+-----------------------------------
+### 4. Contact:
+
+:email: Dr. Xiaoxu Yang: [xiy010@health.ucsd.edu](mailto:xiy010@health.ucsd.edu), [yangxiaoxu-shishen@hotmail.com](mailto:yangxiaoxu-shishen@hotmail.com)
+
+
+
+-----------------------------------
+### 5. Cite the code:
+* Developmental and temporal characteristics of clonal sperm mosaicism. <i>([Cell 2021](http://www.doi.org/10.1016/j.cell.2021.07.024 ))</i>
+* Genomic mosaicism in paternal sperm and multiple parental tissues in a Dravet syndrome cohort. <i>([Sci. Rep. 2017](https://doi.org/10.1038/s41598-017-15814-7))</i>
+* Amplicon resequencing identified parental mosaicism for approximately 10% of <i>“de novo” SCN1A</i> mutations in children with Dravet syndrome. <i>([Hum. Mutat. 2015](https://doi.org/10.1002/humu.22819))</i>
+
