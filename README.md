@@ -71,7 +71,7 @@ If you want to calculate the CIs with PASM Bayesian model, you can use [this per
 
     Yang X and Breuss MW, <i>et al.</i> Gleeson JG. 2021. Developmental and temporal characteristics of clonal sperm mosaicism. <i>[Cell](http://www.doi.org/10.1016/j.cell.2021.07.024)</i> 
 
-* Cite the R version: 
+* Cite the Perl+R version: 
 
     Yang X and Liu A, <i>et al.</i> Wei L and Zhang Y. 2017. Genomic mosaicism in paternal sperm and multiple parental tissues in a Dravet syndrome cohort. <i>[Sci. Rep.](https://doi.org/10.1038/s41598-017-15814-7)</i>
 
