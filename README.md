@@ -35,12 +35,19 @@ You can also only [output the base qualtiy](https://github.com/shishenyxx/PASM/b
 
 If you want to calculate the CIs with PASM Bayesian model, you can use [this perl script](https://github.com/shishenyxx/PASM/blob/master/get_ref_alt_baseQ_corrected_2016_12_03.pl), or a [older version perl script](https://github.com/shishenyxx/PASM/blob/master/old_get_ref_alt_baseQ_corrected_2016_07_14.pl). 
 
+--------------
+
+
+
+## 3. Example Usage:
+
+For the Perl version: `samtools mpileup -r ${chr}:${pos}-${pos} -f <reference_file> -Q0 -q0 -AB -d3000 <input_bam> | ./get_ref_alt_baseQ_corrected_calculate_only_2016_12_03.pl`
 
 --------------
 
 
 
-## 3. Related publications:
+## 4. Related publications:
 * Developmental and temporal characteristics of clonal sperm mosaicism. <i>([Cell 2021](http://www.doi.org/10.1016/j.cell.2021.07.024 ))</i>
 * Comprehensive identification of somatic nucleotide variants in human brain tissue. <i>([Genome Bio. 2021](https://genomebiology.biomedcentral.com/articles/10.1186/s13059-021-02285-3))</i>
 * DeepMosaic: Control-independent mosaic single nucleotide variant detection using deep convolutional neural networks. <i>([bioRxiv 2021](https://www.biorxiv.org/content/10.1101/2020.11.14.382473v2.full))</i>
@@ -59,14 +66,14 @@ If you want to calculate the CIs with PASM Bayesian model, you can use [this per
 * Amplicon resequencing identified parental mosaicism for approximately 10% of <i>“de novo” SCN1A</i> mutations in children with Dravet syndrome. <i>([Hum. Mutat. 2015](https://doi.org/10.1002/humu.22819))</i>
 
 -----------------------------------
-### 4. Contact:
+### 5. Contact:
 
 :email: Dr. Xiaoxu Yang: [xiy010@health.ucsd.edu](mailto:xiy010@health.ucsd.edu), [yangxiaoxu-shishen@hotmail.com](mailto:yangxiaoxu-shishen@hotmail.com)
 
 
 
 -----------------------------------
-### 5. Cite the code:
+### 6. Cite the code:
 * Cite the new Python version or the snakemake wrapper:
 
     Yang X and Breuss MW, <i>et al.</i> Gleeson JG. 2021. Developmental and temporal characteristics of clonal sperm mosaicism. <i>[Cell](http://www.doi.org/10.1016/j.cell.2021.07.024)</i> 
