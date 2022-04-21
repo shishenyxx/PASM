@@ -49,6 +49,8 @@ For the Perl version: `samtools mpileup -r ${chr}:${pos}-${pos} -f <reference_fi
 
 ## 4. Related publications:
 * Somatic mosaicism reveals clonal distributions of neocortical development. <i>([Nature 2022](https://www.nature.com/articles/s41586-022-04602-7))</i>
+* Sperm mosaicism predicts transmission of de novo mutations to human blastocysts. <i>([bioRxiv 2022](https://www.biorxiv.org/content/10.1101/2022.03.28.486034v1.full))</i>
+* Comprehensive multiomic profiling of somatic mutations in malformations of cortical development. <i>([bioRxiv 2022](https://www.biorxiv.org/content/10.1101/2022.04.07.487401v2.full))</i>
 * Developmental and temporal characteristics of clonal sperm mosaicism. <i>([Cell 2021](http://www.doi.org/10.1016/j.cell.2021.07.024 ))</i>
 * Comprehensive identification of somatic nucleotide variants in human brain tissue. <i>([Genome Bio. 2021](https://genomebiology.biomedcentral.com/articles/10.1186/s13059-021-02285-3))</i>
 * DeepMosaic: Control-independent mosaic single nucleotide variant detection using deep convolutional neural networks. <i>([bioRxiv 2021](https://www.biorxiv.org/content/10.1101/2020.11.14.382473v2.full))</i>
