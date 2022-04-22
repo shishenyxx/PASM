@@ -15,7 +15,7 @@ A [Snakemake pipeline](https://github.com/shishenyxx/PASM/tree/master/Snakemake_
 
 ### Python versions:
 
-A [new python version](https://github.com/shishenyxx/PASM/tree/master/2019-09-25-new-python-MAF-binom-calculator) with exact binomial CIs was implemented by Xin Xu supervised by Xiaoxu Yang. (2019-07-24)
+A [new python version](https://github.com/shishenyxx/PASM/tree/master/2019-09-25-new-python-MAF-binom-calculator) with exact binomial CIs was implemented by Xin Xu supervised by Xiaoxu Yang (2019-07-24) and fixed by Jiawei Shen (2022-04-22).
 
 
 A [python version](https://github.com/shishenyxx/PASM/blob/master/CI_calculator.py) was implemented by Xianing Zheng supervised by Xiaoxu Yang. (2016-04-17)
