@@ -48,24 +48,24 @@ For the Perl version: `samtools mpileup -r ${chr}:${pos}-${pos} -f <reference_fi
 
 
 ## 4. Related publications:
-* [Somatic mosaicism reveals clonal distributions of neocortical development.](https://www.nature.com/articles/s41586-022-04602-7) <i>(Nature 2022)</i>
-* [Sperm mosaicism predicts transmission of de novo mutations to human blastocysts.](https://www.biorxiv.org/content/10.1101/2022.03.28.486034v1.full) <i>(bioRxiv 2022)</i>
-* [Comprehensive multiomic profiling of somatic mutations in malformations of cortical development.](https://www.biorxiv.org/content/10.1101/2022.04.07.487401v2.full) <i>(bioRxiv 2022)</i>
-* [Developmental and temporal characteristics of clonal sperm mosaicism.](http://www.doi.org/10.1016/j.cell.2021.07.024) <i>(Cell 2021)</i>
-* [Comprehensive identification of somatic nucleotide variants in human brain tissue.](https://genomebiology.biomedcentral.com/articles/10.1186/s13059-021-02285-3) <i>(Genome Bio. 2021)</i>
-* [DeepMosaic: Control-independent mosaic single nucleotide variant detection using deep convolutional neural networks.](https://www.biorxiv.org/content/10.1101/2020.11.14.382473v2.full) <i>(bioRxiv 2021)</i>
-* [Autism risk in offspring can be assessed through quantification of male sperm mosaicism.](https://doi.org/10.1038/s41591-019-0711-0) <i>(Nat. Med. 2020)</i>
-* [mTOR pathway somatic variants and the molecular pathogenesis of hemimegalencephaly.](https://doi.org/10.1002/epi4.12377) <i>(Epi. Open 2020)</i>
-* [Genomic mosaicism in the pathogenesis and inheritance of a Rett syndrome cohort.](https://doi.org/10.1038/s41436-018-0348-2) <i>(Genet. Med. 2019)</i>
-* [Mosaicism and incomplete penetrance of <i>PCDH19</i> mutations.](http://dx.doi.org/10.1136/jmedgenet-2017-105235) <i>(J. Med. Genet. 2019)</i>
-* [Somatic double-hit in <i>MTOR</i> and <i>RPS6</i> in hemimegalencephaly with intractable epilepsy.](https://doi.org/10.1093/hmg/ddz194) <i>(Hum. Mol. Genet. 2019)</i>
-* [<i>ATP1A3</i> mosaicism in families with alternating hemiplegia of childhood.](https://doi.org/10.1111/cge.13539) <i>(Clin. Genet. 2019)</i>
-* [Distinctive types of postzygotic single-nucleotide mosaicisms in healthy individuals revealed by genome-wide profiling of multiple organs.](https://doi.org/10.1371/journal.pgen.1007395) <i>(PLoS Genet. 2018)</i>
-* [MosaicHunter: accurate detection of postzygotic single-nucleotide mosaicism through next-generation sequencing of unpaired, trio, and paired samples.](https://doi.org/10.1093/nar/gkx024) <i>(Nucleic acids res. 2017)</i>
+* [Somatic mosaicism reveals clonal distributions of neocortical development.](https://www.nature.com/articles/s41586-022-04602-7) 2022. <i>(Nature)</i>
+* [Sperm mosaicism predicts transmission of de novo mutations to human blastocysts.](https://www.biorxiv.org/content/10.1101/2022.03.28.486034v1.full) 2022. <i>(bioRxiv)</i>
+* [Comprehensive multiomic profiling of somatic mutations in malformations of cortical development.](https://www.biorxiv.org/content/10.1101/2022.04.07.487401v2.full) 2022. <i>(bioRxiv)</i>
+* [Developmental and temporal characteristics of clonal sperm mosaicism.](http://www.doi.org/10.1016/j.cell.2021.07.024) 2021. <i>(Cell)</i>
+* [Comprehensive identification of somatic nucleotide variants in human brain tissue.](https://genomebiology.biomedcentral.com/articles/10.1186/s13059-021-02285-3) 2021. <i>(Genome Bio.)</i>
+* [DeepMosaic: Control-independent mosaic single nucleotide variant detection using deep convolutional neural networks.](https://www.biorxiv.org/content/10.1101/2020.11.14.382473v2.full) 2021. <i>(bioRxiv)</i>
+* [Autism risk in offspring can be assessed through quantification of male sperm mosaicism.](https://doi.org/10.1038/s41591-019-0711-0) 2020. <i>(Nat. Med.)</i>
+* [mTOR pathway somatic variants and the molecular pathogenesis of hemimegalencephaly.](https://doi.org/10.1002/epi4.12377) 2020. <i>(Epi. Open)</i>
+* [Genomic mosaicism in the pathogenesis and inheritance of a Rett syndrome cohort.](https://doi.org/10.1038/s41436-018-0348-2) 2019. <i>(Genet. Med.)</i>
+* [Mosaicism and incomplete penetrance of <i>PCDH19</i> mutations.](http://dx.doi.org/10.1136/jmedgenet-2017-105235) 2019. <i>(J. Med. Genet.)</i>
+* [Somatic double-hit in <i>MTOR</i> and <i>RPS6</i> in hemimegalencephaly with intractable epilepsy.](https://doi.org/10.1093/hmg/ddz194) 2019. <i>(Hum. Mol. Genet.)</i>
+* [<i>ATP1A3</i> mosaicism in families with alternating hemiplegia of childhood.](https://doi.org/10.1111/cge.13539) 2019. <i>(Clin. Genet.)</i>
+* [Distinctive types of postzygotic single-nucleotide mosaicisms in healthy individuals revealed by genome-wide profiling of multiple organs.](https://doi.org/10.1371/journal.pgen.1007395) 2018. <i>(PLoS Genet.)</i>
+* [MosaicHunter: accurate detection of postzygotic single-nucleotide mosaicism through next-generation sequencing of unpaired, trio, and paired samples.](https://doi.org/10.1093/nar/gkx024) 2017. <i>(Nucleic acids res.)</i>
 * [Ultrasensitive and high-efficiency screen of de novo low-frequency mutations by o2n-seq.](https://doi.org/10.1038/ncomms15335) <i>(Nat. Comms. 2017)</i>
-* [Postzygotic single‐nucleotide mosaicisms contribute to the etiology of autism spectrum disorder and autistic traits and the origin of mutations.](https://doi.org/10.1002/humu.23255) <i>(Hum. Mutat. 2017)</i>
-* [Genomic mosaicism in paternal sperm and multiple parental tissues in a Dravet syndrome cohort.](https://doi.org/10.1038/s41598-017-15814-7) <i>(Sci. Rep. 2017)</i>
-* [Amplicon resequencing identified parental mosaicism for approximately 10% of <i>“de novo” SCN1A</i> mutations in children with Dravet syndrome.](https://doi.org/10.1002/humu.22819) <i>(Hum. Mutat. 2015)</i>
+* [Postzygotic single‐nucleotide mosaicisms contribute to the etiology of autism spectrum disorder and autistic traits and the origin of mutations.](https://doi.org/10.1002/humu.23255) 2017. <i>(Hum. Mutat.)</i>
+* [Genomic mosaicism in paternal sperm and multiple parental tissues in a Dravet syndrome cohort.](https://doi.org/10.1038/s41598-017-15814-7) 2017. <i>(Sci. Rep.)</i>
+* [Amplicon resequencing identified parental mosaicism for approximately 10% of <i>“de novo” SCN1A</i> mutations in children with Dravet syndrome.](https://doi.org/10.1002/humu.22819) 2015. <i>(Hum. Mutat.)</i>
 
 -----------------------------------
 ### 5. Contact:
