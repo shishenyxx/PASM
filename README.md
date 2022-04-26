@@ -1,10 +1,10 @@
 # PASM and MPAS
 
-## 1. Overview
+## 1. Overview:
 Here are scripts initially written for Postzygotic Amplicon Sequencing for Mosaicism (PASM) and some codes for the method we now define as Massive Parallel Amplicon Sequencing (MPAS). We provided a perl+R version, two standalone python versions, and a Snakemake pipeline. The scripts and pipelines are useful for the calculation of variant allelic fraction (AF) based on not only amplicon based deep sequencing data, but also the AF estimation as well as annotations for postzygotic mosaic variant studies from all kinds of Next Generation Sequencing (NGS) data.
 
 --------------
-## 2. Versions and updates
+## 2. Versions and updates:
 For the calculation of confidence intervals, you can choose [exact binomial confidence interval in R](https://www.rdocumentation.org/packages/stats/versions/3.6.2/topics/binom.test) ([Clopper-Pearson interval](https://en.wikipedia.org/wiki/Binomial_proportion_confidence_interval) by default), or the iterative methods which considers the base qualities from each base, described in <i>[Xu , Yang, and Wu et al. Wei and Zhang. 2015](https://doi.org/10.1002/humu.22819)</i> and <i>[Yang and Liu et al. Wu, Wei, and Zhang. 2017](https://doi.org/10.1038/s41598-017-15814-7)</i>, different versions of scripts are available.
 
 ### Snakemake pipelines:
@@ -39,7 +39,7 @@ If you want to calculate the CIs with PASM Bayesian model, you can use [this per
 
 
 
-## 3. Example Usage:
+## 3. Example usage:
 
 For the Perl version: `samtools mpileup -r ${chr}:${pos}-${pos} -f <reference_file> -Q0 -q0 -AB -d3000 <input_bam> | ./get_ref_alt_baseQ_corrected_calculate_only_2016_12_03.pl`
 
