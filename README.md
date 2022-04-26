@@ -62,7 +62,7 @@ For the Perl version: `samtools mpileup -r ${chr}:${pos}-${pos} -f <reference_fi
 * [<i>ATP1A3</i> mosaicism in families with alternating hemiplegia of childhood.](https://doi.org/10.1111/cge.13539) 2019. <i>(Clin. Genet.)</i>
 * [Distinctive types of postzygotic single-nucleotide mosaicisms in healthy individuals revealed by genome-wide profiling of multiple organs.](https://doi.org/10.1371/journal.pgen.1007395) 2018. <i>(PLoS Genet.)</i>
 * [MosaicHunter: accurate detection of postzygotic single-nucleotide mosaicism through next-generation sequencing of unpaired, trio, and paired samples.](https://doi.org/10.1093/nar/gkx024) 2017. <i>(Nucleic acids res.)</i>
-* [Ultrasensitive and high-efficiency screen of de novo low-frequency mutations by o2n-seq.](https://doi.org/10.1038/ncomms15335) <i>(Nat. Comms. 2017)</i>
+* [Ultrasensitive and high-efficiency screen of de novo low-frequency mutations by o2n-seq.](https://doi.org/10.1038/ncomms15335) 2017. <i>(Nat. Comms.)</i>
 * [Postzygotic single‐nucleotide mosaicisms contribute to the etiology of autism spectrum disorder and autistic traits and the origin of mutations.](https://doi.org/10.1002/humu.23255) 2017. <i>(Hum. Mutat.)</i>
 * [Genomic mosaicism in paternal sperm and multiple parental tissues in a Dravet syndrome cohort.](https://doi.org/10.1038/s41598-017-15814-7) 2017. <i>(Sci. Rep.)</i>
 * [Amplicon resequencing identified parental mosaicism for approximately 10% of <i>“de novo” SCN1A</i> mutations in children with Dravet syndrome.](https://doi.org/10.1002/humu.22819) 2015. <i>(Hum. Mutat.)</i>
