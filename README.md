@@ -78,11 +78,11 @@ For the Perl version: `samtools mpileup -r ${chr}:${pos}-${pos} -f <reference_fi
 ### 6. Cite the code:
 * Cite the new Python version or the snakemake wrapper:
 
-    Yang X and Breuss MW, <i>et al.</i> Gleeson JG. 2021. [Developmental and temporal characteristics of clonal sperm mosaicism.](http://www.doi.org/10.1016/j.cell.2021.07.024) <i>Cell</i> 
+    Yang X and Breuss MW, <i>et al.</i> Gleeson JG. [Developmental and temporal characteristics of clonal sperm mosaicism.](http://www.doi.org/10.1016/j.cell.2021.07.024) 2021. <i>Cell</i> 
 
 * Cite the Perl+R version: 
 
-    Yang X and Liu A, <i>et al.</i> Wei L and Zhang Y. 2017. [Genomic mosaicism in paternal sperm and multiple parental tissues in a Dravet syndrome cohort.](https://doi.org/10.1038/s41598-017-15814-7) <i>Sci. Rep.</i>
+    Yang X and Liu A, <i>et al.</i> Wei L and Zhang Y. [Genomic mosaicism in paternal sperm and multiple parental tissues in a Dravet syndrome cohort.](https://doi.org/10.1038/s41598-017-15814-7) 2017. <i>Sci. Rep.</i>
 
-    Xu X, Yang X, and Wu Q, <i>et al.</i> Wei L and Zhang Y. 2015. [Amplicon resequencing identified parental mosaicism for approximately 10% of <i>“de novo” SCN1A</i> mutations in children with Dravet syndrome.](https://doi.org/10.1002/humu.22819) <i>Hum. Mutat.</i>
+    Xu X, Yang X, and Wu Q, <i>et al.</i> Wei L and Zhang Y. [Amplicon resequencing identified parental mosaicism for approximately 10% of <i>“de novo” SCN1A</i> mutations in children with Dravet syndrome.](https://doi.org/10.1002/humu.22819) 2015. <i>Hum. Mutat.</i>
 
