@@ -45,9 +45,13 @@ For the Perl version: `samtools mpileup -r ${chr}:${pos}-${pos} -f <reference_fi
 
 --------------
 
+## 4. Experimental design:
 
+Primers for the amplicons are designed based on the [Primer3 Command Line version](https://github.com/shishenyxx/primer3).
 
-## 4. Related publications:
+--------------
+
+## 5. Related publications:
 * [Somatic mosaicism reveals clonal distributions of neocortical development.](https://www.nature.com/articles/s41586-022-04602-7) 2022. <i>(Nature)</i>
 * [Sperm mosaicism predicts transmission of de novo mutations to human blastocysts.](https://www.biorxiv.org/content/10.1101/2022.03.28.486034v1.full) 2022. <i>(bioRxiv)</i>
 * [Comprehensive multiomic profiling of somatic mutations in malformations of cortical development.](https://www.biorxiv.org/content/10.1101/2022.04.07.487401v2.full) 2022. <i>(bioRxiv)</i>
