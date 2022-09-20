@@ -56,8 +56,8 @@ Primers for the amplicons are designed based on the [Primer3 Command Line versio
 ## 5. Related publications:
 
 * [Somatic mosaicism reveals clonal distributions of neocortical development.](https://www.nature.com/articles/s41586-022-04602-7) 2022. <i>(Nature)</i>
-* [Unbiased mosaic variant assessment in sperm: a cohort study to test predictability of transmission.](https://elifesciences.org/articles/78459) 2022. <i>(eLife)</i>
 * [Comprehensive multiomic profiling of somatic mutations in malformations of cortical development.](https://www.biorxiv.org/content/10.1101/2022.04.07.487401v2.full) 2022. <i>(bioRxiv)</i>
+* [Unbiased mosaic variant assessment in sperm: a cohort study to test predictability of transmission.](https://elifesciences.org/articles/78459) 2022. <i>(eLife)</i>
 * [Developmental and temporal characteristics of clonal sperm mosaicism.](http://www.doi.org/10.1016/j.cell.2021.07.024) 2021. <i>(Cell)</i>
 * [Comprehensive identification of somatic nucleotide variants in human brain tissue.](https://genomebiology.biomedcentral.com/articles/10.1186/s13059-021-02285-3) 2021. <i>(Genome Bio.)</i>
 * [DeepMosaic: Control-independent mosaic single nucleotide variant detection using deep convolutional neural networks.](https://www.biorxiv.org/content/10.1101/2020.11.14.382473v2.full) 2021. <i>(bioRxiv)</i>
