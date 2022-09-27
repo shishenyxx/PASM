@@ -89,7 +89,7 @@ Primers for the amplicons are designed based on the [Primer3 Command Line versio
 
     Yang X and Breuss MW, <i>et al.</i> Gleeson JG. [Developmental and temporal characteristics of clonal sperm mosaicism.](http://www.doi.org/10.1016/j.cell.2021.07.024) 2021. <i>Cell</i> 
     
-    Breuss MW, Yang X, Schlachetzki JCM, and Antaki D, <i>et al.</i> Gleeson JG. [Somatic mosaicism reveals clonal distributions of neocortical development.](https://www.nature.com/articles/s41586-022-04602-7) 2022. <i>(Nature)</i> 
+    Breuss MW, Yang X, Schlachetzki JCM, and Antaki D, <i>et al.</i> Gleeson JG. [Somatic mosaicism reveals clonal distributions of neocortical development.](https://www.nature.com/articles/s41586-022-04602-7) 2022. <i>Nature</i> 
     
 * Cite the Perl+R version and the Bayesian model: 
 
