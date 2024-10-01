@@ -11,6 +11,7 @@ The annotation pipeline takes a list of candidate variants as input, calculates 
 #### [BEDTools](https://bedtools.readthedocs.io/en/latest/index.html)
 #### [NumPy](https://numpy.org/), [pandas](https://pandas.pydata.org/), and [subprocess](https://docs.python.org/3/library/subprocess.html) packages should be available for your Python
 #### add the [lib](https://github.com/shishenyxx/PASM/tree/master/Snakemake_pipeline/lib) folder to your $PYTHONPATH
+#### the genome package is now duplicated [here](https://github.com/shishenyxx/PASM/tree/master/Snakemake_pipeline/genome) 
 #### the genome.h5 file is generated following [https://github.com/gmcvicker/genome](https://github.com/gmcvicker/genome)
 
 ----------------------------
