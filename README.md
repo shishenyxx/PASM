@@ -39,8 +39,6 @@ If you want to calculate the CIs with PASM Bayesian model, you can use [this per
 
 --------------
 
-
-
 ## 3. Example usage:
 
 For the Perl version: `samtools mpileup -r ${chr}:${pos}-${pos} -f <reference_file> -Q0 -q0 -AB -d3000 <input_bam> | ./get_ref_alt_baseQ_corrected_calculate_only_2016_12_03.pl`
@@ -49,8 +47,15 @@ For the Perl version: `samtools mpileup -r ${chr}:${pos}-${pos} -f <reference_fi
 
 ## 4. Experimental design:
 
-Primers for the amplicons are designed based on the [Primer3 Command Line version](https://github.com/shishenyxx/primer3).
 
+![image](https://github.com/user-attachments/assets/86e1da03-23a3-4537-975e-6b7f831e3ea0)
+
+1. Primers for the amplicons are designed based on the [Primer3 Command Line version](https://github.com/shishenyxx/primer3). Alternative homozygous SNPs with 0 reference bases from preliminary sequencing data is recommended as negative controls. Heterozygous SNPs with bulk AF around 50% or known heterozygous in the proband can be used as positive controls.
+2. After amplicon design and sequencing, data is mapped, indel realigned and the base quality scores recalibrated.
+3. Decision boundaries are based on a] the 1-(95% binomial lower CI of alt homo) (95% percentile for an FDR of 0.05 for homozygous); b] assuming no reverse mutation, the 95% binomial lower CI of hets (95% percentile for an FDR of 0.05 for heterozygous).
+
+Percentiles for decision boundaries could be adjusted to get different accuracy
+   
 --------------
 
 ## 5. Related publications:
