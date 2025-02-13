@@ -2,12 +2,12 @@
 
 ## 1. Overview:
 
-Here are scripts initially written for Postzygotic Amplicon Sequencing for Mosaicism (PASM), Targeted Amplicon Sequencing (TAS/TASeq), and some codes for the method we now define as Massive Parallel Amplicon Sequencing (MPAS). We provided a perl+R version, two standalone python versions, and a Snakemake pipeline. The scripts and pipelines are useful for the calculation of variant allelic fraction (AF) based on not only amplicon based deep sequencing data, but also the AF estimation as well as annotations for postzygotic mosaic variant studies from all kinds of Next Generation Sequencing (NGS) data.
+Here are scripts initially written for Postzygotic Amplicon Sequencing for Mosaicism (PASM), Targeted Amplicon Sequencing (TAS/TASeq), and some codes for the method we now define as Massive Parallel Amplicon Sequencing (MPAS). We provided a Perl+R version, two standalone Python versions, and a Snakemake pipeline. The scripts and pipelines are useful for the calculation of variant allelic fraction (AF) based on not only amplicon-based deep sequencing data but also the AF estimation as well as annotations for postzygotic mosaic variant studies from all kinds of Next Generation Sequencing (NGS) data.
 
 --------------
 ## 2. Versions and updates:
 
-For the calculation of confidence intervals, you can choose [exact binomial confidence interval in R](https://www.rdocumentation.org/packages/stats/versions/3.6.2/topics/binom.test) ([Clopper-Pearson interval](https://en.wikipedia.org/wiki/Binomial_proportion_confidence_interval) by default), or the iterative methods which considers the base qualities from each base, described in <i>[Xu , Yang, and Wu et al. Wei and Zhang. 2015](https://doi.org/10.1002/humu.22819)</i> and <i>[Yang and Liu et al. Wu, Wei, and Zhang. 2017](https://doi.org/10.1038/s41598-017-15814-7)</i>, different versions of scripts are available.
+For the calculation of confidence intervals, you can choose [exact binomial confidence interval in R](https://www.rdocumentation.org/packages/stats/versions/3.6.2/topics/binom.test) ([Clopper-Pearson interval](https://en.wikipedia.org/wiki/Binomial_proportion_confidence_interval) by default), or the iterative methods which consider the base qualities from each base, described in <i>[Xu , Yang, and Wu et al. Wei and Zhang. 2015](https://doi.org/10.1002/humu.22819)</i> and <i>[Yang and Liu et al. Wu, Wei, and Zhang. 2017](https://doi.org/10.1038/s41598-017-15814-7)</i>, different versions of scripts are available.
 
 ### Snakemake pipelines:
 
@@ -20,7 +20,7 @@ A [Snakemake pipeline](https://github.com/shishenyxx/PASM/tree/master/Snakemake_
 A [new python version](https://github.com/shishenyxx/PASM/tree/master/2019-09-25-new-python-MAF-binom-calculator) with exact binomial CIs was implemented by Xin Xu supervised by Xiaoxu Yang (2019-07-24) and fixed by Jiawei Shen (2022-04-22).
 
 
-A [python version](https://github.com/shishenyxx/PASM/blob/master/CI_calculator.py) was implemented by Xianing Zheng supervised by Xiaoxu Yang. (2016-04-17)
+A [python version](https://github.com/shishenyxx/PASM/blob/master/CI_calculator.py) was implemented by Xianing Zheng and supervised by Xiaoxu Yang. (2016-04-17)
 
 
 ### Perl and R versions:
@@ -30,9 +30,9 @@ Note that the Perl package [Statistics::R](https://metacpan.org/pod/Statistics::
 `pryr`. (2014-11-11)
 
  #### Instructions for the Perl + R version:
-The [first part of the perl version](https://github.com/shishenyxx/PASM/blob/master/get_ref_alt_baseQ_corrected_calculate_only_2016_12_03.pl) is a pileup filter, it takes in SAMTools mpileup results and calculate different characters to count the bases, written by Jiarui Li, modified by Xiaoxu Yang and Xianing Zheng. (2015-03-24)
+The [first part of the Perl version](https://github.com/shishenyxx/PASM/blob/master/get_ref_alt_baseQ_corrected_calculate_only_2016_12_03.pl) is a pileup filter, it takes in SAMTools mpileup results and calculates different characters to count the bases, written by Jiarui Li, modified by Xiaoxu Yang and Xianing Zheng. (2015-03-24)
 
-You can also only [output the base qualtiy](https://github.com/shishenyxx/PASM/blob/master/get_ref_alt_baseQ_corrected_2016_12_03_output_basequality.pl) and deal with the base qualities in R. 
+You can also only [output the base quality](https://github.com/shishenyxx/PASM/blob/master/get_ref_alt_baseQ_corrected_2016_12_03_output_basequality.pl) and deal with the base qualities in R. 
 
 
 If you want to calculate the CIs with PASM Bayesian model, you can use [this perl script](https://github.com/shishenyxx/PASM/blob/master/get_ref_alt_baseQ_corrected_2016_12_03.pl), or a [older version perl script](https://github.com/shishenyxx/PASM/blob/master/old_get_ref_alt_baseQ_corrected_2016_07_14.pl). 
@@ -91,13 +91,15 @@ Percentiles for decision boundaries could be adjusted to get different accuracy
 ## 7. Cite the code:
 * Cite the Python version or the snakemake wrapper and the binomial model:
 
-    Yang X and Breuss MW, <i>et al.</i> Gleeson JG. [Developmental and temporal characteristics of clonal sperm mosaicism.](http://www.doi.org/10.1016/j.cell.2021.07.024) 2021. <i>Cell</i> 
-    
-    Breuss MW, Yang X, Schlachetzki JCM, and Antaki D, <i>et al.</i> Gleeson JG. [Somatic mosaicism reveals clonal distributions of neocortical development.](https://www.nature.com/articles/s41586-022-04602-7) 2022. <i>Nature</i> 
-    
+    Yang X*,#, Xu X*, <i>et al. [Control-independent mosaic single nucleotide variant detection with DeepMosaic.](https://www.nature.com/articles/s41587-022-01559-w) 2023. <i>Nature Biotechnology</i> 
+
+    Breuss MW*, Yang X*, Schlachetzki JCM*, and Antaki D*, <i>et al.</i> [Somatic mosaicism reveals clonal distributions of neocortical development.](https://www.nature.com/articles/s41586-022-04602-7) 2022. <i>Nature</i> 
+
+    Yang X* and Breuss MW*, <i>et al.</i> [Developmental and temporal characteristics of clonal sperm mosaicism.](http://www.doi.org/10.1016/j.cell.2021.07.024) 2021. <i>Cell</i> 
+           
 * Cite the Perl+R version and the Bayesian model: 
 
-    Yang X and Liu A, <i>et al.</i> Wei L and Zhang Y. [Genomic mosaicism in paternal sperm and multiple parental tissues in a Dravet syndrome cohort.](https://doi.org/10.1038/s41598-017-15814-7) 2017. <i>Scientific Reports</i>
+    Yang X* and Liu A*, <i>et al.</i> [Genomic mosaicism in paternal sperm and multiple parental tissues in a Dravet syndrome cohort.](https://doi.org/10.1038/s41598-017-15814-7) 2017. <i>Scientific Reports</i>
 
-    Xu X, Yang X, and Wu Q, <i>et al.</i> Wei L and Zhang Y. [Amplicon resequencing identified parental mosaicism for approximately 10% of <i>“de novo” SCN1A</i> mutations in children with Dravet syndrome.](https://doi.org/10.1002/humu.22819) 2015. <i>Human Mutation</i>
+    Xu X*, Yang X*, and Wu Q*, <i>et al.</i> [Amplicon resequencing identified parental mosaicism for approximately 10% of <i>“de novo” SCN1A</i> mutations in children with Dravet syndrome.](https://doi.org/10.1002/humu.22819) 2015. <i>Human Mutation</i>
 
