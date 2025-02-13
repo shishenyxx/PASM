@@ -51,10 +51,11 @@ For the Perl version: `samtools mpileup -r ${chr}:${pos}-${pos} -f <reference_fi
 ![image](https://github.com/user-attachments/assets/86e1da03-23a3-4537-975e-6b7f831e3ea0)
 
 1. Primers for the amplicons are designed based on the [Primer3 Command Line version](https://github.com/shishenyxx/primer3). Alternative homozygous SNPs with 0 reference bases from preliminary sequencing data are recommended as negative controls. Heterozygous SNPs with bulk AF around 50% or known heterozygous in the proband can be used as positive controls.
-2. After amplicon design and sequencing, data is mapped, indel realigned and the base quality scores recalibrated.
-3. Decision boundaries are based on a] the 1-(95% binomial lower CI of alt homo) (95% percentile for an FDR of 0.05 for homozygous); b] assuming no reverse mutation, the 95% binomial lower CI of hets (95% percentile for an FDR of 0.05 for heterozygous).
+2. After amplicon design, libraries are made for Illumina or Ion Torrent platforms.
+3. After sequencing, data is mapped, indel realigned and the base quality scores recalibrated.
+4. Decision boundaries are based on a] the 1-(95% binomial lower CI of alt homo) (95% percentile for an FDR of 0.05 for homozygous); b] assuming no reverse mutation, the 95% binomial lower CI of hets (95% percentile for an FDR of 0.05 for heterozygous).
 
-Percentiles for decision boundaries could be adjusted to get different accuracy
+Percentiles for decision boundaries could be adjusted to get different accuracy.
    
 --------------
 
