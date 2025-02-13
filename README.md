@@ -7,11 +7,11 @@ Here are scripts initially written for Postzygotic Amplicon Sequencing for Mosai
 --------------
 ## 2. Versions and updates:
 
-For the calculation of confidence intervals, you can choose [exact binomial confidence interval in R](https://www.rdocumentation.org/packages/stats/versions/3.6.2/topics/binom.test) ([Clopper-Pearson interval](https://en.wikipedia.org/wiki/Binomial_proportion_confidence_interval) by default), or the iterative methods which consider the base qualities from each base, described in <i>[Xu , Yang, and Wu et al. Wei and Zhang. 2015](https://doi.org/10.1002/humu.22819)</i> and <i>[Yang and Liu et al. Wu, Wei, and Zhang. 2017](https://doi.org/10.1038/s41598-017-15814-7)</i>, different versions of scripts are available.
+For the calculation of confidence intervals, you can choose [exact binomial confidence interval in R](https://www.rdocumentation.org/packages/stats/versions/3.6.2/topics/binom.test) ([Clopper-Pearson interval](https://en.wikipedia.org/wiki/Binomial_proportion_confidence_interval) by default), or the iterative methods which consider the base qualities from each base, described in <i>[Xu, Yang, and Wu et al. Wei and Zhang. 2015](https://doi.org/10.1002/humu.22819)</i> and <i>[Yang and Liu et al. Wu, Wei, and Zhang. 2017](https://doi.org/10.1038/s41598-017-15814-7)</i>, different versions of scripts are available.
 
 ### Snakemake pipelines:
 
-A [Snakemake pipeline](https://github.com/shishenyxx/PASM/tree/master/Snakemake_pipeline) with exact binomial CIs and detailed annotations was implemented by Xin Xu and Xiaoxu Yang, with great input form Martin Breuss, the pipeline is based on the Python scripts written by Xin Xu and a previous Snakemake pipeline written by Martin Breuss and Renee D. George. (2019-08-12)
+A [Snakemake pipeline](https://github.com/shishenyxx/PASM/tree/master/Snakemake_pipeline) with exact binomial CIs and detailed annotations was implemented by Xin Xu and Xiaoxu Yang, with great input from Martin Breuss, the pipeline is based on the Python scripts written by Xin Xu and a previous Snakemake pipeline written by Martin Breuss and Renee D. George. (2019-08-12)
 
 
 
@@ -35,7 +35,7 @@ The [first part of the Perl version](https://github.com/shishenyxx/PASM/blob/mas
 You can also only [output the base quality](https://github.com/shishenyxx/PASM/blob/master/get_ref_alt_baseQ_corrected_2016_12_03_output_basequality.pl) and deal with the base qualities in R. 
 
 
-If you want to calculate the CIs with PASM Bayesian model, you can use [this perl script](https://github.com/shishenyxx/PASM/blob/master/get_ref_alt_baseQ_corrected_2016_12_03.pl), or a [older version perl script](https://github.com/shishenyxx/PASM/blob/master/old_get_ref_alt_baseQ_corrected_2016_07_14.pl). 
+If you want to calculate the CIs with PASM Bayesian model, you can use [this Perl script](https://github.com/shishenyxx/PASM/blob/master/get_ref_alt_baseQ_corrected_2016_12_03.pl), or a [older version perl script](https://github.com/shishenyxx/PASM/blob/master/old_get_ref_alt_baseQ_corrected_2016_07_14.pl). 
 
 --------------
 
@@ -50,7 +50,7 @@ For the Perl version: `samtools mpileup -r ${chr}:${pos}-${pos} -f <reference_fi
 
 ![image](https://github.com/user-attachments/assets/86e1da03-23a3-4537-975e-6b7f831e3ea0)
 
-1. Primers for the amplicons are designed based on the [Primer3 Command Line version](https://github.com/shishenyxx/primer3). Alternative homozygous SNPs with 0 reference bases from preliminary sequencing data is recommended as negative controls. Heterozygous SNPs with bulk AF around 50% or known heterozygous in the proband can be used as positive controls.
+1. Primers for the amplicons are designed based on the [Primer3 Command Line version](https://github.com/shishenyxx/primer3). Alternative homozygous SNPs with 0 reference bases from preliminary sequencing data are recommended as negative controls. Heterozygous SNPs with bulk AF around 50% or known heterozygous in the proband can be used as positive controls.
 2. After amplicon design and sequencing, data is mapped, indel realigned and the base quality scores recalibrated.
 3. Decision boundaries are based on a] the 1-(95% binomial lower CI of alt homo) (95% percentile for an FDR of 0.05 for homozygous); b] assuming no reverse mutation, the 95% binomial lower CI of hets (95% percentile for an FDR of 0.05 for heterozygous).
 
