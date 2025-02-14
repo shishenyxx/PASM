@@ -85,7 +85,7 @@ Percentiles for decision boundaries could be adjusted to get different accuracy.
 
 ## 6. Contact:
 
-:email: Xiaoxu Yang: [u6055394@utah.edu](mailto:u6055394@utah.edu), [xiaoxuyanglab@gmail.com](mailto:xiaoxuyanglab@gmail.com)
+:email: Xiaoxu Yang: [xiaoxu.yang@genetics.utah.edu](mailto:xiaoxu.yang@genetics.utah.edu), [xiaoxuyanglab@gmail.com](mailto:xiaoxuyanglab@gmail.com)
 
 -----------------------------------
 
