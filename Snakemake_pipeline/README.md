@@ -12,6 +12,13 @@ The annotation pipeline takes a list of candidate variants as input, calculates 
 #### [NumPy](https://numpy.org/), [pandas](https://pandas.pydata.org/), and [subprocess](https://docs.python.org/3/library/subprocess.html) packages should be available for your Python
 #### add the [lib](https://github.com/shishenyxx/PASM/tree/master/Snakemake_pipeline/lib) folder to your $PYTHONPATH
 #### the genome package is now duplicated [here](https://github.com/shishenyxx/PASM/tree/master/Snakemake_pipeline/genome) 
+You can add the following path to your bashrc. 
+```
+export PYTHONPATH=".:$PYTHONPATH:/repos/genome/python/lib/"
+export GENOME_DIR="/genomes"
+export GENOME_DB="/genomes/genome_db"
+```
+
 #### the genome.h5 file is generated following [https://github.com/gmcvicker/genome](https://github.com/gmcvicker/genome)
 
 ----------------------------
