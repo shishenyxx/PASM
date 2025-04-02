@@ -41,7 +41,7 @@ If you want to calculate the CIs with PASM Bayesian model, you can use [this Per
 
 ## 3. Example usage:
 
-For the Perl version: `samtools mpileup -r ${chr}:${pos}-${pos} -f <reference_file> -Q0 -q0 -AB -d3000 <input_bam> | ./get_ref_alt_baseQ_corrected_calculate_only_2016_12_03.pl`
+For the Perl version: `samtools mpileup -r ${chr}:${pos}-${pos} -f <reference_file> -Q 0 -q 0 -AB -d 5000000 <input_bam> | ./get_ref_alt_baseQ_corrected_calculate_only_2016_12_03.pl`
 
 --------------
 
