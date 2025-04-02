@@ -8,9 +8,9 @@ from scipy.stats import beta
 from scipy import stats
 
 
-def translate_bases(ref, depth, match):
+def translate_bases(ref, depth, match, gt_alt):
     ref_lc = ref.lower()
-    bases = ['A','a','T','t','C','c','G','g', "I", "i", "D", "d"]
+    bases = ['A','a','T','t','C','c','G','g', "I", "i", "D", "d", "I_alt", "i_alt", "D_alt", "d_alt"]
     pos_n = {}
     count = {}
     for base in bases:
@@ -50,6 +50,15 @@ def translate_bases(ref, depth, match):
                 else:
                     count["i"] +=1
                 c = 10*int(match[i+1]) + int(match[i+2])
+                substring = "+" + match[i+3 : i+3+c]
+                if substring == gt_alt:
+#                  print(f"找到匹配: {substring} == {gt_alt}")
+                   count["I_alt"] += 1
+                elif substring == gt_alt.lower():
+#                  print(f"找到匹配: lower {substring} == {gt_alt}")
+                   count["i_alt"] +=1
+#                else:
+#                  print(f"不匹配: {substring} != {gt_alt}")
                 i += c+3
                 pos_q += c+3
             else:
@@ -58,6 +67,15 @@ def translate_bases(ref, depth, match):
                 else:
                     count["i"] +=1
                 c = int(match[i+1])
+                substring = "+" + match[i+2 : i+2+c]
+                if substring == gt_alt:
+#                  print(f"找到匹配: {substring} == {gt_alt}")
+                   count["I_alt"] += 1
+                elif substring == gt_alt.lower():
+#                  print(f"找到匹配: lower {substring} == {gt_alt}")
+                   count["i_alt"] +=1
+#                else:
+#                  print(f"不匹配: {substring} != {gt_alt}")
                 i += c+2
                 pos_q += c+2
             in_base += c
@@ -69,6 +87,15 @@ def translate_bases(ref, depth, match):
                 else:
                     count["d"] +=1
                 c = 10*int(match[i+1])+ int(match[i+2])
+                substring = "-" + match[i+3 : i+3+c]
+                if substring == gt_alt:
+#                  print(f"找到匹配: {substring} == {gt_alt}")
+                   count["D_alt"] += 1
+                elif substring == gt_alt.lower():
+#                  print(f"找到匹配: lower {substring} == {gt_alt}")
+                   count["d_alt"] +=1
+#               else:
+#                  print(f"不匹配: {substring} != {gt_alt}")
                 i += c+3
             else:
                 if match[i+2].isupper():
@@ -76,6 +103,15 @@ def translate_bases(ref, depth, match):
                 else:
                     count["d"] +=1
                 c = int(match[i+1])
+                substring = "-" + match[i+2 : i+2+c]
+                if substring == gt_alt:
+#                  print(f"找到匹配: {substring} == {gt_alt}")
+                   count["D_alt"] += 1
+                elif substring == gt_alt.lower():
+#                  print(f"找到匹配: lower {substring} == {gt_alt}")
+                   count["d_alt"] += 1
+#                else:
+#                  print(f"不匹配: {substring} != {gt_alt}")
                 i += c+2
             del_base += c
         elif match[i] == "*":                                                                                                                
@@ -108,17 +144,29 @@ def main(argv):
         sys.exit(2)
     gt_chrom = argv[1]
     gt_pos = argv[2]
-    gt_ref = argv[3]
-    gt_alt = argv[4]
+    ref_arg=argv[3]
+    alt_arg=argv[4]
+    if len(ref_arg) > 1:
+       gt_ref = alt_arg
+       gt_alt = "-" + ref_arg[1:]
+    else:
+       if len(alt_arg) > 1:
+           gt_ref = ref_arg
+           gt_alt = "+" + alt_arg[1:]
+       else:
+           gt_ref = ref_arg
+           gt_alt = alt_arg
     bam_file = argv[5]
+    print(gt_ref,gt_alt)
 
     query_position = str(gt_chrom) + ":" + str(gt_pos) + "-" + str(gt_pos)
     output, error = Popen(["samtools", "mpileup", "-r", query_position, \
-           "-f", "/tscc/projects/ps-gleesonlab7/gleeson3/reference_fasta/human_g1k_v37_decoy.fasta",\
+           "-f", "/work/project/weizhen/ref/Homo_sapiens_assembly38.fasta",\
            "-Q 13 -q0 -AB -d5000000 ", \
            bam_file],\
            stdin=PIPE, stdout=PIPE, stderr=PIPE).communicate()
     output = output.decode()
+    print(output)
     items = output.rstrip().split("\t")
     pos = int(items[1])
     ref = items[2].upper()
@@ -126,17 +174,20 @@ def main(argv):
     if depth > 0:                                                                                                                           
         match = items[4]
         quality = items[5]                                                                                                                  
-        count, pos_n = translate_bases(ref, depth, match)
+        count, pos_n = translate_bases(ref, depth, match, gt_alt)
         num_ref = count[ref] + count[ref.lower()]
         if len(gt_ref) == len(gt_alt):
             num_alt = count[gt_alt] + count[gt_alt.lower()]
+            print(count[gt_alt],count[gt_alt.lower()])
             oddsratio, pvalue = stats.fisher_exact([[count[gt_ref], count[gt_ref.lower()]], [count[gt_alt], count[gt_alt.lower()]]])
-        elif len(gt_ref) > len(gt_alt): #deletion
-            num_alt = count["D"] + count["d"]
-            oddsratio, pvalue = stats.fisher_exact([[count[gt_ref], count[gt_ref.lower()]], [count["D"], count["d"]]])
-        elif len(gt_ref) < len(gt_alt): #insertion
-            num_alt = count["I"] + count["i"]
-            oddsratio, pvalue = stats.fisher_exact([[count[gt_ref], count[gt_ref.lower()]], [count["I"], count["i"]]])
+        elif gt_alt.startswith('-'): #deletion
+            num_alt = count["D_alt"] + count["d_alt"]
+            print(count["D_alt"],count["d_alt"])
+            oddsratio, pvalue = stats.fisher_exact([[count[gt_ref], count[gt_ref.lower()]], [count["D_alt"], count["d_alt"]]])
+        elif gt_alt.startswith('+'): #insertion
+            num_alt = count["I_alt"] + count["i_alt"]
+            print(count["I_alt"],count["i_alt"])
+            oddsratio, pvalue = stats.fisher_exact([[count[gt_ref], count[gt_ref.lower()]], [count["I_alt"], count["i_alt"]]])
         ci_lower, ci_upper = wilson_binom_interval(num_alt, num_alt + num_ref, alpha = 0.05)
         a_count = count["A"] + count["a"]
         c_count = count["C"] + count["c"]
@@ -144,6 +195,7 @@ def main(argv):
         t_count = count["T"] + count["t"]
         i_count = count["I"] + count["i"]
         d_count = count["D"] + count["d"]
-#        print("\t".join(["A", "C", "G", "T", "Insertion", "Deletion", "MAF", "CI_lower", "CI_upper", "Fisher_pvalue"]))
-        print("\t".join(map(str, [a_count, c_count, g_count, t_count, i_count, d_count, num_alt/(num_ref+num_alt), ci_lower, ci_upper, pvalue])))
+        i_alt_count = count["I_alt"] + count["i_alt"]
+        d_alt_count = count["D_alt"] + count["d_alt"]
+        print("\t".join(map(str, [a_count, c_count, g_count, t_count, i_count, d_count, i_alt_count, d_alt_count, num_alt/(num_ref+num_alt), ci_lower, ci_upper, pvalue])))
 main(sys.argv)
