@@ -61,6 +61,7 @@ Percentiles for decision boundaries could be adjusted to get different accuracy.
 
 ## 5. Related publications:
 
+* [Identification of Novel Mosaic Variants in Focal Epilepsy-Associated Patients’ Brain Lesions](https://www.mdpi.com/2073-4425/16/4/421) 2025. <i>(Genes)</i>
 * [Cell-type-resolved mosaicism reveals clonal dynamics of the human forebrain](https://www.nature.com/articles/s41586-024-07292-5) 2024. <i>(Nature)</i>
 * [Control-independent mosaic single nucleotide variant detection with DeepMosaic.](https://www.nature.com/articles/s41587-022-01559-w) 2023. <i>(Nature Biotechnology)</i>
 * [Comprehensive multi-omic profiling of somatic mutations in malformations of cortical development.](https://doi.org/10.1038/s41558-022-01276-9) 2023. <i>(Nature Genetics)</i>
