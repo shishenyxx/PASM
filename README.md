@@ -84,18 +84,22 @@ Percentiles for decision boundaries could be adjusted to get different accuracy.
 
 -----------------------------------
 
-## 6. Contact:
+## 6. Contributors:
+
+Xiaoxu Yang, Jiarui Li, Adam Yongxin Ye, Xianing Zheng, Sheng Wang, Martin W Breuss, Xin Xu, Weizhen Zhou.
+
+-----------------------------------
+
+## 7. Contact:
 
 :email: Xiaoxu Yang: [xiaoxu.yang@genetics.utah.edu](mailto:xiaoxu.yang@genetics.utah.edu), [xiaoxuyanglab@gmail.com](mailto:xiaoxuyanglab@gmail.com)
 
 -----------------------------------
 
-## 7. Cite the code:
+## 8. Cite the code:
 * Cite the Python version or the snakemake wrapper and the binomial model:
 
     Yang X*,#, Xu X*, <i>et al. [Control-independent mosaic single nucleotide variant detection with DeepMosaic.](https://www.nature.com/articles/s41587-022-01559-w) 2023. <i>Nature Biotechnology</i> 
-
-    Breuss MW*, Yang X*, Schlachetzki JCM*, and Antaki D*, <i>et al.</i> [Somatic mosaicism reveals clonal distributions of neocortical development.](https://www.nature.com/articles/s41586-022-04602-7) 2022. <i>Nature</i> 
 
     Yang X* and Breuss MW*, <i>et al.</i> [Developmental and temporal characteristics of clonal sperm mosaicism.](http://www.doi.org/10.1016/j.cell.2021.07.024) 2021. <i>Cell</i> 
            
