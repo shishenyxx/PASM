@@ -99,7 +99,7 @@ Xiaoxu Yang, Jiarui Li, Adam Yongxin Ye, Xianing Zheng, Sheng Wang, Martin W Bre
 ## 8. Cite the code:
 * Cite the Python version or the snakemake wrapper and the binomial model:
 
-    Yang X*,#, Xu X*, <i>et al. [Control-independent mosaic single nucleotide variant detection with DeepMosaic.](https://www.nature.com/articles/s41587-022-01559-w) 2023. <i>Nature Biotechnology</i> 
+    Yang X*,#, Xu X*, <i>et al.</i> [Control-independent mosaic single nucleotide variant detection with DeepMosaic.](https://www.nature.com/articles/s41587-022-01559-w) 2023. <i>Nature Biotechnology</i> 
 
     Yang X* and Breuss MW*, <i>et al.</i> [Developmental and temporal characteristics of clonal sperm mosaicism.](http://www.doi.org/10.1016/j.cell.2021.07.024) 2021. <i>Cell</i> 
            
