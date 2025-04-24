@@ -1,4 +1,4 @@
-# PASM, TAS/TASeq, and MPAS
+# PASM, TAS/TASeq, and MPAS/snMPAS
 
 ## 1. Overview:
 
